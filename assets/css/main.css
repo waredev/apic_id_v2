@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "ArianLTBold";
+    src: url("~/assets/fonts/ArianLTBold.ttf");
+}
+
+@font-face {
+    font-family: "ArianLTDemi";
+    src: url("~/assets/fonts/ArianLTDemi.ttf");
+}
+
+.custom-shadow {
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+}
