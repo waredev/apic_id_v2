@@ -1,5 +1,6 @@
 <template>
     <div class="h-screen relative bg-light-blue bg-hero bg-cover">
+        <particles-bg type="cobweb" color="#6F6F6F" :bg="true" />
         <div class="xl:px-32 px-8 xl:pt-96 pt-40 font-arian-bold">
             <div class="xl:text-7xl text-5xl">Pacific Strategic <br>Financial Tbk.</div>
             <div class="text-paraph mt-5 text-lg">PT Pacific Strategic Financial Tbk (“Perseroan”) merupakan <br>perusahaan yang bergerak dalam bidang . . . .</div>
@@ -11,7 +12,7 @@
   
   <script>
   export default {
-    name: 'TheHero'
+    name: 'TheHero',
   }
   </script>
   
