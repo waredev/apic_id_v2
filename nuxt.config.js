@@ -71,5 +71,9 @@ export default {
       },
     },
     transpile: ['particles-bg-vue']
-  }
+  },
+  generate: {
+    fallback: true
+  },
+  target: 'static'
 }
