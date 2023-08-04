@@ -3,7 +3,7 @@ export default {
         home: 'HOME',
         about: 'ABOUT',
         gcg: 'GCG',
-        contact: 'CONTACT US'
+        contact_us: 'CONTACT US'
     },
     home: {
         read_more: 'Read More',

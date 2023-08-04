@@ -3,7 +3,7 @@ export default {
         home: 'BERANDA',
         about: 'TENTANG',
         gcg: 'GCG',
-        contact: 'HUBUNGI KAMI'
+        contact_us: 'HUBUNGI KAMI'
     },
     home: {
         read_more: 'Baca Selengkapnya',
