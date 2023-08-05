@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="w-full h-20 xl:px-32 px-8 xl:mt-2 mt-0 flex items-center justify-between">
-                <nuxt-link to="/">
+                <nuxt-link :to="localePath('/')">
                     <div class="flex items-center">
                         <img src="~assets/images/logo.png" class="xl:w-14 xl:h-14 w-12 h-12"/>
                         <div class="font-arian-bold xl:text-2xl text-lg xl:ml-5 ml-2">PACIFIC STRATEGIC FINANCIAL</div>
@@ -66,22 +66,22 @@
                         </div>
                         <div class="absolute bg-transparent transition-all scale-0 group-hover:scale-100">
                             <div class="w-80 bg-white custom-shadow mt-2.5 rounded-md py-3">
-                                <nuxt-link to="'/">
+                                <nuxt-link :to="localePath({name: 'about-commissioners-profile'})">
                                     <div class="font-nunito hover:text-primary py-3 px-5">PROFIL DEWAN KOMISARIS</div>
                                 </nuxt-link>
-                                <nuxt-link to="'/">
+                                <nuxt-link to="/">
                                     <div class="font-nunito hover:text-primary py-3 px-5">PROFIL DIREKSI</div>
                                 </nuxt-link>
-                                <nuxt-link to="'/">
+                                <nuxt-link to="/">
                                     <div class="font-nunito hover:text-primary py-3 px-5">STRUKTUR ORGANISASI</div>
                                 </nuxt-link>
-                                <nuxt-link to="'/">
+                                <nuxt-link to="/">
                                     <div class="font-nunito hover:text-primary py-3 px-5">INFORMASI PERUSAHAAN DAN ENTITAS ANAK</div>
                                 </nuxt-link>
-                                <nuxt-link to="'/">
+                                <nuxt-link to="/">
                                     <div class="font-nunito hover:text-primary py-3 px-5">VISI DAN MISI</div>
                                 </nuxt-link>
-                                <nuxt-link to="'/">
+                                <nuxt-link to="/">
                                     <div class="font-nunito hover:text-primary py-3 px-5">INFORMASI CORPORATE SECRETARY</div>
                                 </nuxt-link>
                             </div>
@@ -94,13 +94,13 @@
                         </div>
                         <div class="absolute bg-transparent transition-all scale-0 group-hover:scale-100">
                             <div class="w-64 bg-white custom-shadow mt-2.5 rounded-md py-3">
-                                <nuxt-link to="'/">
+                                <nuxt-link to="/">
                                     <div class="font-nunito hover:text-primary py-3 px-5">ANNUAL REPORT</div>
                                 </nuxt-link>
-                                <nuxt-link to="'/">
+                                <nuxt-link to="/">
                                     <div class="font-nunito hover:text-primary py-3 px-5">RUPS</div>
                                 </nuxt-link>
-                                <nuxt-link to="'/">
+                                <nuxt-link to="/">
                                     <div class="font-nunito hover:text-primary py-3 px-5">LAPORAN KEUANGAN</div>
                                 </nuxt-link>
                             </div>
@@ -134,8 +134,8 @@
                         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" :class="!showSubMenu1 ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' "><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </div>
                     <div v-if="showSubMenu1" class="pl-5">
-                        <nuxt-link to="'/">
-                            <div class="my-4">PROFIL DEWAN KOMISARIS</div>
+                        <nuxt-link :to="localePath({name: 'about-commissioners-profile'})">
+                            <div class="my-4 bg-primary">PROFIL DEWAN KOMISARIS</div>
                         </nuxt-link>
                         <nuxt-link to="'/">
                             <div class="my-4">PROFIL DIREKSI</div>

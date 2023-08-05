@@ -52,7 +52,18 @@ export default {
           },
         ],
         langDir: 'lang/',
-        defaultLocale: 'id'
+        defaultLocale: 'id',
+        parsePages: false,
+        pages: {
+          'contact-us': {
+            id: '/kontak-kami',
+            en: '/contact-us'
+          },
+          'about/commissioners-profile': {
+            id: '/tentang/profil-dewan-komisaris',
+            en: '/about/commissioners-profile',
+          }
+        }
       }
     ],
     '@nuxtjs/device'
