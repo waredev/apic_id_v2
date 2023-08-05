@@ -54,7 +54,8 @@ export default {
         langDir: 'lang/',
         defaultLocale: 'id'
       }
-    ]
+    ],
+    '@nuxtjs/device'
   ],
   server: {     
     port: 3000, // default: 3000     
