@@ -217,30 +217,6 @@
                             </nuxt-link>
                         </div>
                     </div>
-                    <!-- <div class="relative group cursor-pointer">
-                        <div v-if="this.$i18n.locale === 'id'" class='group-hover:text-primary flex items-center'>
-                            <img src="~/assets/images/indonesia-language.png" class="w-6 h-6 border-2 border-black rounded-full">
-                            <div class="ml-2">Bahasa Indonesia</div>
-                        </div>
-                        <div v-else class='group-hover:text-primary flex items-center'>
-                            <img src="~/assets/images/english-language.png" class="w-6 h-6 border-2 border-black rounded-full">
-                            <div class="ml-2">English</div>
-                        </div>
-                        <div class="absolute bg-transparent transition-all scale-0 group-hover:scale-100">
-                            <div class="w-60 bg-white custom-shadow mt-2.5 rounded-md py-3">
-                                <nuxt-link :to="switchLocalePath('id')">
-                                    <div class="flex items-center py-3 px-5">
-                                        <div class="hover:text-primary">Bahasa Indonesia</div>
-                                    </div>
-                                </nuxt-link>
-                                <nuxt-link :to="switchLocalePath('en')">
-                                    <div class="flex items-center py-3 px-5">
-                                        <div class="hover:text-primary">English</div>
-                                    </div>
-                                </nuxt-link>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -287,6 +263,6 @@
             if (process.client) {
                 window.removeEventListener("scroll", this.handleScroll);
             }
-        },
+        }
     }
 </script>
