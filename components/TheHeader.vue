@@ -69,7 +69,7 @@
                                 <nuxt-link :to="localePath({name: 'about-commissioners-profile'})">
                                     <div class="font-nunito hover:text-primary py-3 px-5">PROFIL DEWAN KOMISARIS</div>
                                 </nuxt-link>
-                                <nuxt-link to="/">
+                                <nuxt-link :to="localePath({name: 'about-directors-profile'})">
                                     <div class="font-nunito hover:text-primary py-3 px-5">PROFIL DIREKSI</div>
                                 </nuxt-link>
                                 <nuxt-link to="/">
@@ -137,7 +137,7 @@
                         <nuxt-link :to="localePath({name: 'about-commissioners-profile'})">
                             <div class="my-4 bg-primary">PROFIL DEWAN KOMISARIS</div>
                         </nuxt-link>
-                        <nuxt-link to="'/">
+                        <nuxt-link :to="localePath({name: 'about-directors-profile'})">
                             <div class="my-4">PROFIL DIREKSI</div>
                         </nuxt-link>
                         <nuxt-link to="'/">

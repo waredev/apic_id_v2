@@ -62,6 +62,10 @@ export default {
           'about/commissioners-profile': {
             id: '/tentang/profil-dewan-komisaris',
             en: '/about/commissioners-profile',
+          },
+          'about/directors-profile': {
+            id: '/tentang/profil-direksi',
+            en: '/about/directors-profile',
           }
         }
       }
