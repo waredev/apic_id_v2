@@ -1,6 +1,6 @@
 <template>
     <section class="pt-32 xl:px-20 px-10 font-nunito mb-32">
-      <div>
+      <div class="mt-40">
         <div v-if="error.statusCode === 404">
           <img src="~assets/images/error-404.png" class="w-72 mx-auto object-contain" />
           <div class="font-nunito text-word text-center">Sorry, the page you are looking for was not found</div>

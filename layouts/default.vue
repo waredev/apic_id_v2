@@ -1,6 +1,7 @@
 <template>
     <div>
       <the-header />
+      <particles-bg type="cobweb" color="#6F6F6F" :bg="true" />
       <Nuxt />
       <the-footer />
     </div>
