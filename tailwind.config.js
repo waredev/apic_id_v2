@@ -19,7 +19,9 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         primary: '#FE0000',
-        'paraph': '#6F6F6F'
+        secondary: '#8b0000',
+        'paraph': '#6F6F6F',
+        'paraphdark': '#454343',
       }
     },
   },

@@ -66,6 +66,14 @@ export default {
           'about/directors-profile': {
             id: '/tentang/profil-direksi',
             en: '/about/directors-profile',
+          },
+          'about/organization-structure': {
+            id: '/tentang/struktur-organisasi',
+            en: '/about/organization-structure',
+          },
+          'about/company-information': {
+            id: '/tentang/informasi-perusahaan-dan-entitas-anak',
+            en: '/about/company-and-subsidiary-entity-information',
           }
         }
       }

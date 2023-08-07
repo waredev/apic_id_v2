@@ -72,10 +72,10 @@
                                 <nuxt-link :to="localePath({name: 'about-directors-profile'})">
                                     <div class="font-nunito hover:text-primary py-3 px-5">PROFIL DIREKSI</div>
                                 </nuxt-link>
-                                <nuxt-link to="/">
+                                <nuxt-link :to="localePath({name: 'about-organization-structure'})">
                                     <div class="font-nunito hover:text-primary py-3 px-5">STRUKTUR ORGANISASI</div>
                                 </nuxt-link>
-                                <nuxt-link to="/">
+                                <nuxt-link :to="localePath({name: 'about-company-information'})">
                                     <div class="font-nunito hover:text-primary py-3 px-5">INFORMASI PERUSAHAAN DAN ENTITAS ANAK</div>
                                 </nuxt-link>
                                 <nuxt-link to="/">
@@ -135,22 +135,22 @@
                     </div>
                     <div v-if="showSubMenu1" class="pl-5">
                         <nuxt-link :to="localePath({name: 'about-commissioners-profile'})">
-                            <div class="my-4 bg-primary">PROFIL DEWAN KOMISARIS</div>
+                            <div @click="closeMenu()" class="my-4">PROFIL DEWAN KOMISARIS</div>
                         </nuxt-link>
                         <nuxt-link :to="localePath({name: 'about-directors-profile'})">
-                            <div class="my-4">PROFIL DIREKSI</div>
+                            <div @click="closeMenu()" class="my-4">PROFIL DIREKSI</div>
+                        </nuxt-link>
+                        <nuxt-link :to="localePath({name: 'about-organization-structure'})">
+                            <div @click="closeMenu()" class="my-4">STRUKTUR ORGANISASI</div>
+                        </nuxt-link>
+                        <nuxt-link :to="localePath({name: 'about-company-information'})">
+                            <div @click="closeMenu()" class="my-4">INFORMASI PERUSAHAAN DAN ENTITAS ANAK</div>
                         </nuxt-link>
                         <nuxt-link to="'/">
-                            <div class="my-4">STRUKTUR ORGANISASI</div>
+                            <div @click="closeMenu()" class="my-4">VISI DAN MISI</div>
                         </nuxt-link>
                         <nuxt-link to="'/">
-                            <div class="my-4">INFORMASI PERUSAHAAN DAN ENTITAS ANAK</div>
-                        </nuxt-link>
-                        <nuxt-link to="'/">
-                            <div class="my-4">VISI DAN MISI</div>
-                        </nuxt-link>
-                        <nuxt-link to="'/">
-                            <div class="my-4">INFORMASI CORPORATE SECRETARY</div>
+                            <div @click="closeMenu()" class="my-4">INFORMASI CORPORATE SECRETARY</div>
                         </nuxt-link>
                     </div>
                 </div>
@@ -161,13 +161,13 @@
                     </div>
                     <div v-if="showSubMenu2" class="pl-5">
                         <nuxt-link to="'/">
-                            <div class="my-4">ANNUAL REPORT</div>
+                            <div @click="closeMenu()" class="my-4">ANNUAL REPORT</div>
                         </nuxt-link>
                         <nuxt-link to="'/">
-                            <div class="my-4">RUPS</div>
+                            <div @click="closeMenu()" class="my-4">RUPS</div>
                         </nuxt-link>
                         <nuxt-link to="'/">
-                            <div class="my-4">LAPORAN KEUANGAN</div>
+                            <div @click="closeMenu()" class="my-4">LAPORAN KEUANGAN</div>
                         </nuxt-link>
                     </div>
                 </div>
