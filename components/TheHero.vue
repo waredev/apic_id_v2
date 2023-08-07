@@ -21,9 +21,9 @@
     },
     mounted() {
       if(this.$device.isMobile){
-        this.particles = 50;
+        this.particles = 10;
       }else{
-        this.particles = 200;
+        this.particles = 50;
       }
       this.isMounted = true;
     }

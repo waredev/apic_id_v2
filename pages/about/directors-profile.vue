@@ -35,11 +35,6 @@
         activeTab: 0
       }
     },
-    methods: {
-      switchTab(){
-        
-      }
-    }
   }
   </script>
   
