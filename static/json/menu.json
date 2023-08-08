@@ -1,0 +1,124 @@
+[
+    {
+        "title": "menu.home",
+        "label": "BERANDA",
+        "sub": [],
+        "route": "/"
+    },
+    {
+        "title": "menu.about",
+        "label": "TENTANG",
+        "sub": [
+            {
+                "title": "submenu.management.title",
+                "label": "MANAJEMEN",
+                "sub": [
+                    {
+                        "title": "submenu.management.sub.commissioners",
+                        "label": "DEWAN KOMISARIS",
+                        "route": "about-commissioners-profile"
+                    },
+                    {
+                        "title": "submenu.management.sub.directors",
+                        "label": "DIREKSI",
+                        "route": "about-directors-profile"
+                    }
+                ],
+                "route": null
+            },
+            {
+                "title": "submenu.company_information",
+                "label": "INFORMASI PERUSAHAAN DAN ENTITAS ANAK",
+                "sub": [],
+                "route": "about-company-information"
+            },
+            {
+                "title": "submenu.supporting_professional_institutions",
+                "label": "LEMBAGA PROFESI PENUNJANG",
+                "sub": [],
+                "route": "about-supporting-institution"
+            },
+            {
+                "title": "submenu.award",
+                "label": "PENGHARGAAN",
+                "sub": [],
+                "route": "about-award"
+            },
+            {
+                "title": "submenu.organization_structure",
+                "label": "STRUKTUR ORGANISASI",
+                "sub": [],
+                "route": "about-organization-structure"
+            },
+            {
+                "title": "submenu.ownership_structure",
+                "label": "STRUKTUR KEPEMILIKAN",
+                "sub": [],
+                "route": "about-ownership-structure"
+            },
+            {
+                "title": "submenu.visi_and_mission",
+                "label": "VISI DAN MISI",
+                "sub": [],
+                "route": "about-visi-and-mission"
+            },
+            {
+                "title": "submenu.corporate_governance.title",
+                "label": "CORPORATE GOVERNANCE",
+                "sub": [
+                    {
+                        "title": "submenu.corporate_governance.sub.guidlines_commissioners",
+                        "label": "PEDOMAN KERJA KOMISARIS DAN DIREKSI",
+                        "route": "about-guidlines-commissioners"
+                    },
+                    {
+                        "title": "submenu.corporate_governance.sub.audit_commite",
+                        "label": "AUDIT COMMITTEE",
+                        "route": "about-audit-commite"
+                    },
+                    {
+                        "title": "submenu.corporate_governance.sub.code_of_conduct",
+                        "label": "CODE OF CONDUCT",
+                        "route": "about-code-of-conduct"
+                    },
+                    {
+                        "title": "submenu.corporate_governance.sub.risk_manajement",
+                        "label": "MANAJEMEN RISIKO",
+                        "route": "about-risk-manajement"
+                    }
+                ],
+                "route": null
+            },
+            {
+                "title": "submenu.disclosure_information.title",
+                "label": "INFORMASI KETERBUKAAN LAINNYA",
+                "sub": [
+                    {
+                        "title": "submenu.disclosure_information.sub.audit_commite_information",
+                        "label": "AUDIT COMMITTEE INFORMATION",
+                        "route": "about-audit-commite-information"
+                    },
+                    {
+                        "title": "submenu.disclosure_information.sub.corporate_social_responsibility",
+                        "label": "CORPORATE SOCIAL RESPONSIBILITY",
+                        "route": "about-corporate-social-responsibility"
+                    }
+                ],
+                "route": null
+            }
+        ],
+        "route": null
+    },
+    {
+        "title": "menu.gcg",
+        "label": "GCG",
+        "sub": [],
+        "route": "/"
+    },
+    {
+        "title": "menu.contact_us",
+        "label": "CONTACT US",
+        "sub": [],
+        "route": "/"
+    }
+]
