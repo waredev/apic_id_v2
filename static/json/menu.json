@@ -119,6 +119,6 @@
         "title": "menu.contact_us",
         "label": "CONTACT US",
         "sub": [],
-        "route": "/"
+        "route": "contact-us"
     }
 ]
