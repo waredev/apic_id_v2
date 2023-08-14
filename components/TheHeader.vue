@@ -109,55 +109,59 @@
         <!-- mobile version -->
         <div :class="showMenu ? 'w-screen h-screen bg-white px-8 fixed z-20 transition-all' : 'hidden'">
             <div class="font-arian-bold mt-32">
-                <nuxt-link :to="localePath('/')">
-                    <div @click="closeMenu()" class="my-4">{{ $t('menu.home') }}</div>
-                </nuxt-link>
-                <div class="my-4 cursor-pointer" @click="showSubMenu1 = !showSubMenu1">
-                    <div class='group-hover:text-primary flex items-center'>
-                        <div>{{ $t('menu.about') }}</div>
-                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" :class="!showSubMenu1 ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' "><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </div>
-                    <div v-if="showSubMenu1" class="pl-5">
-                        <nuxt-link :to="localePath({name: 'about-commissioners-profile'})">
-                            <div @click="closeMenu()" class="my-4">PROFIL DEWAN KOMISARIS</div>
-                        </nuxt-link>
-                        <nuxt-link :to="localePath({name: 'about-directors-profile'})">
-                            <div @click="closeMenu()" class="my-4">PROFIL DIREKSI</div>
-                        </nuxt-link>
-                        <nuxt-link :to="localePath({name: 'about-organization-structure'})">
-                            <div @click="closeMenu()" class="my-4">STRUKTUR ORGANISASI</div>
-                        </nuxt-link>
-                        <nuxt-link :to="localePath({name: 'about-company-information'})">
-                            <div @click="closeMenu()" class="my-4">INFORMASI PERUSAHAAN DAN ENTITAS ANAK</div>
-                        </nuxt-link>
-                        <nuxt-link to="'/">
-                            <div @click="closeMenu()" class="my-4">VISI DAN MISI</div>
-                        </nuxt-link>
-                        <nuxt-link to="'/">
-                            <div @click="closeMenu()" class="my-4">INFORMASI CORPORATE SECRETARY</div>
-                        </nuxt-link>
+                <div v-for="(menu, index) in MENU_DATA" :key="index">
+                    <nuxt-link v-if="menu.sub.length === 0" :to="localePath(menu.route)">
+                        <div @click="closeMenu()" class="my-4">{{ $t(menu.title) }}</div>
+                    </nuxt-link>
+
+                    <div v-else>
+                        <div v-if="menu.label === 'TENTANG'" class="my-4 cursor-pointer">
+                            <div class='group-hover:text-primary flex items-center' @click="showSubMenu1 = !showSubMenu1">
+                                <div>{{ $t(menu.title) }}</div>
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" :class="!showSubMenu1 ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' "><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div v-if="showSubMenu1" v-for="(submenu, subMenuIndex) in menu.sub" :key="subMenuIndex" class="pl-5">
+                                <div v-if="submenu.sub.length > 0" class="bg-white">
+                                    <div @click="sub4active = submenu.title" class="flex mt-4 items-center">
+                                        <div class="">{{ $t(submenu.title) }}</div>
+                                        <svg :class="sub4active === submenu.title ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' " viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" ><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </div>
+                                    <div v-if="sub4active === submenu.title" class="pl-4 bg-white group-focus:visible">
+                                        <nuxt-link v-for="(sub4menu, sub4Index) in submenu.sub" :key="sub4Index" :to="localePath({name: sub4menu.route})">
+                                            <div @click="closeMenu()" class="my-4">{{ '> ' + $t(sub4menu.title)}}</div>
+                                        </nuxt-link>
+                                    </div>
+                                </div>
+                                <nuxt-link v-else :to="localePath({name: submenu.route})">
+                                    <div @click="closeMenu()" class="my-4">{{$t(submenu.title)}}</div>
+                                </nuxt-link>
+                            </div>
+                        </div>
+                        <div v-else class="my-4 cursor-pointer">
+                            <div class='group-hover:text-primary flex items-center' @click="showSubMenu2 = !showSubMenu2">
+                                <div>{{ $t(menu.title) }}</div>
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" :class="!showSubMenu2 ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' "><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div v-if="showSubMenu2" v-for="(submenu, subMenuIndex) in menu.sub" :key="subMenuIndex" class="pl-5">
+                                <div v-if="submenu.sub.length > 0" class="bg-white">
+                                    <div @click="sub4active = submenu.title" class="flex mt-4 items-center">
+                                        <div class="">{{ $t(submenu.title) }}</div>
+                                        <svg :class="sub4active === submenu.title ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' " viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" ><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </div>
+                                    <div v-if="sub4active === submenu.title" class="pl-4 bg-white group-focus:visible">
+                                        <nuxt-link v-for="(sub4menu, sub4Index) in submenu.sub" :key="sub4Index" :to="localePath({name: sub4menu.route})">
+                                            <div @click="closeMenu()" class="my-4">{{ '> ' + $t(sub4menu.title)}}</div>
+                                        </nuxt-link>
+                                    </div>
+                                </div>
+                                <nuxt-link v-else :to="localePath({name: submenu.route})">
+                                    <div @click="closeMenu()" class="my-4">{{$t(submenu.title)}}</div>
+                                </nuxt-link>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="my-4 cursor-pointer" @click="showSubMenu2 = !showSubMenu2">
-                    <div class='group-hover:text-primary flex items-center'>
-                        <div>{{ $t('menu.gcg') }}</div>
-                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" :class="!showSubMenu2 ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' "><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </div>
-                    <div v-if="showSubMenu2" class="pl-5">
-                        <nuxt-link to="'/">
-                            <div @click="closeMenu()" class="my-4">ANNUAL REPORT</div>
-                        </nuxt-link>
-                        <nuxt-link to="'/">
-                            <div @click="closeMenu()" class="my-4">RUPS</div>
-                        </nuxt-link>
-                        <nuxt-link to="'/">
-                            <div @click="closeMenu()" class="my-4">LAPORAN KEUANGAN</div>
-                        </nuxt-link>
-                    </div>
-                </div>
-                <nuxt-link :to="localePath('contact-us')">
-                    <div @click="closeMenu()" class="my-4">{{ $t('menu.contact_us') }}</div>
-                </nuxt-link>
+                
                 <!-- contact info -->
                 <div class="flex flex-col space-y-5 mt-12">
                     <div class="flex items-center">
@@ -218,7 +222,8 @@
                 showSubMenu1: false,
                 showSubMenu2: false,
                 showSubMenu3: false,
-                MENU_DATA: []
+                MENU_DATA: [],
+                sub4active: null
             }
         },
         methods: {

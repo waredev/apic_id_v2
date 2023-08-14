@@ -34,7 +34,17 @@ export default {
                 audit_commite_information: 'INFORMASI KOMITE AUDIT',
                 corporate_social_responsibility: 'INFORMASI TANGGUNG JAWAB SOSIAL PERUSAHAAN'
             }
-        }
+        },
+        annual_report: 'ANNUAL REPORT',
+        finance_report: {
+            title: 'LAPORAN KEUANGAN',
+            sub: {
+                annual_finance_report: 'LAPORAN KEUANGAN TAHUNAN',
+                middle_annual_finance_report: 'LAPORAN KEUANGAN TENGAH TAHUNAN'
+            }
+        },
+        rups: 'RUPS',
+        shareholders_information: 'INFORMASI PEMEGANG SAHAM'
     },
     home: {
         read_more: 'Baca Selengkapnya',

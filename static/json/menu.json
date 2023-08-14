@@ -112,7 +112,43 @@
     {
         "title": "menu.gcg",
         "label": "GCG",
-        "sub": [],
+        "sub": [
+            {
+                "title": "submenu.annual_report",
+                "label": "ANNUAL REPORT",
+                "sub": [],
+                "route": "about-annual-report"
+            },
+            {
+                "title": "submenu.finance_report.title",
+                "label": "LAPORAN KEUANGAN",
+                "sub": [
+                    {
+                        "title": "submenu.finance_report.sub.annual_finance_report",
+                        "label": "LAPORAN KEUANGAN TAHUNAN",
+                        "route": "about-annual_finance_report"
+                    },
+                    {
+                        "title": "submenu.finance_report.sub.middle_annual_finance_report",
+                        "label": "LAPORAN KEUANGAN TENGAH TAHUNAN",
+                        "route": "about-middle-annual_finance_report"
+                    }
+                ],
+                "route": null
+            },
+            {
+                "title": "submenu.rups",
+                "label": "RUPS",
+                "sub": [],
+                "route": "about-rups"
+            },
+            {
+                "title": "submenu.shareholders_information",
+                "label": "INFORMASI PEMEGANG SAHAM",
+                "sub": [],
+                "route": "about-shareholders-information"
+            }
+        ],
         "route": "/"
     },
     {
