@@ -75,6 +75,22 @@ export default {
             id: '/tentang/informasi-perusahaan-dan-entitas-anak',
             en: '/about/company-and-subsidiary-entity-information',
           },
+          'about/vision-and-mission': {
+            id: '/tentang/visi-dan-misi',
+            en: '/about/vision-and-mission',
+          },
+          'about/supporting-professional-institution': {
+            id: '/tentang/lembaga-profesi-penunjang',
+            en: '/about/supporting-professional-institution',
+          },
+          'about/award': {
+            id: '/tentang/penghargaan',
+            en: '/about/award',
+          },
+          'about/ownership-structure': {
+            id: '/tentang/struktur-kepemilikan',
+            en: '/about/ownership-structure',
+          },
 
 
           // gcg

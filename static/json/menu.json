@@ -38,7 +38,7 @@
                     {
                         "title": "submenu.company_profile.sub.supporting_professional_institutions",
                         "label": "LEMBAGA PROFESI PENUNJANG",
-                        "route": "about-supporting-institution"
+                        "route": "about-supporting-professional-institution"
                     },
                     {
                         "title": "submenu.company_profile.sub.award",
@@ -58,7 +58,7 @@
                     {
                         "title": "submenu.company_profile.sub.visi_and_mission",
                         "label": "VISI DAN MISI",
-                        "route": "about-visi-and-mission"
+                        "route": "about-vision-and-mission"
                     }
                 ],
                 "route": null

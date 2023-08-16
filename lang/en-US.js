@@ -75,7 +75,16 @@ export default {
         president_director_label: 'PRESIDENT DIRECTOR',
         director_label: 'DIRECTOR',
         board_of_director_content1: 'Indonesian citizen, 55 years old, obtained master of Management degree from Institute of Economic Science Supra, Jakarta in 2005 and Bachelor of Economics majoring in Accounting from Universitas Airlangga in 1992. Currently : the Company’s President Director, who previously served as: the Company’s Independent Commissioner (August 2016–June 2021), Associate Director of PT Pacific Capital (July 2012-June 2014), ), General Manager of PT Royal Trust Capital (2011-2012), General Manager of PT MNC Securities (May 2000-November 2011), Vice President of PT Bhakti Investama Tbk (November 1999-May 2000), Internal Controller of  PT Danatama Makmur Securities (September 1997-October 1999), Director of PT Bomar Securities (December 1994-September 1997), Branch Manager of PT Dharmala Securities (November 1989-December 1994) and Auditors in Public Accounting firms and Tax Consultants (1987-1989).',
-        board_of_director_content2: 'Indonesian citizen, 54 years old. obtained a degree of Sarjana Ekonomi in Accounting from Universitas Gadjah Mada, Yogyakarta in 1994. Currently: the Company’s Director, who previously served as: the Company’s President Director (August 2016-June 2021), Company’s Independent Commissioner (2009-2016), Commissioner of PT Artha Pacific Securities (2003-2004), Director of PT Artha Pacific Securities (2002-2003). President Director of PT Artha Pacific Securities (2000-2001), Sales Manager of PT Cipta Dana Amertha Securities (1994-1996), and Sales Manager of PT Prakarsa Investama (1996-1998).'
+        board_of_director_content2: 'Indonesian citizen, 54 years old. obtained a degree of Sarjana Ekonomi in Accounting from Universitas Gadjah Mada, Yogyakarta in 1994. Currently: the Company’s Director, who previously served as: the Company’s President Director (August 2016-June 2021), Company’s Independent Commissioner (2009-2016), Commissioner of PT Artha Pacific Securities (2003-2004), Director of PT Artha Pacific Securities (2002-2003). President Director of PT Artha Pacific Securities (2000-2001), Sales Manager of PT Cipta Dana Amertha Securities (1994-1996), and Sales Manager of PT Prakarsa Investama (1996-1998).',
+        vision_label: 'VISION',
+        mision_label: 'MISSION',
+        vision_content: ' To become a leading investment company in Indonesia based on five pillars, namely honesty, diligence, service, experience, and discipline.',
+        mision_content: {
+            mission_content1: 'To develop existing assets and human resources sustainably.',
+            mission_content2: 'Invest to achieve maximum profit while taking into account business risks.',
+            mission_content3: 'Strive to continue to improve the Company’s performance within the framework of stronger Indonesian economic development.',
+        },
+        ownership_structure_label: 'Ownership Structure.'
     },
     gcg: {
         annual_report: 'Annual Report.'

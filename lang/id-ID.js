@@ -75,7 +75,16 @@ export default {
         president_director_label: 'DIREKTUR UTAMA',
         director_label: 'DIREKTUR',
         board_of_director_content1: 'Warga negara Indonesia, 55 tahun. Memperoleh gelar Magister Manajemen dari Sekolah Tinggi Ilmu Ekonomi (STIE) Supra,Jakarta Tahun 2005 dan Sarjana Ekonomi jurusan Akuntansi dari Universitas AIrlangga Tahun 1992. Saat ini menjabat sebagai Direktur Utama Perseroan, sebelumnya beliau menjabat sebagai Komisaris Utama Perseroan (Agustus 2016-Juni2021), Associate Director PT Pacific Capital (Juli 2012-Juni 2014), General Manager PT Royal Trust Capital (2011-2012), General Manager PT MNC Securities (Mei 2000-November 2011), Vice President PT Bhakti Investama Tbk (November 1999-Mei 2000), Internal Controller PT Danatama Makmur Securities (September 1997-Oktober 1999), Direktur PT Bomar Securities (Desember 1994-September 1997), Branch Manager PT Dharmala Securities (November 1989-Desember 1994) dan Auditor di Kantor Akuntan Publik dan Konsultan Pajak (1987-1989).',
-        board_of_director_content2: 'Warga Negara Indonesia, 54 Tahun. Memperoleh gelar Sarjana Ekonomi bidang Akuntansi dari Universitas Gadjah Mada, Yogyakarta Tahun 1994. Saat ini menjabat sebagai Direktur Perseroan, sebelumnya beliau menjabat sebagai Direktur Utama Perseroan (Agustus 2016-Juni 2021), Komisaris Utama Perseroan (2009-2016), Komisaris PT Artha Pacific Securities (2003-2004), Direktur PT Artha Pacific Securities (2002-2003), Direktur Utama PT Artha Pacific Securities (2000-2001), Sales Manager PT Cipta Dana Amerta Securities (1994-1996), dan Sales Manager PT Prakarsa Investama (1996-1998).'
+        board_of_director_content2: 'Warga Negara Indonesia, 54 Tahun. Memperoleh gelar Sarjana Ekonomi bidang Akuntansi dari Universitas Gadjah Mada, Yogyakarta Tahun 1994. Saat ini menjabat sebagai Direktur Perseroan, sebelumnya beliau menjabat sebagai Direktur Utama Perseroan (Agustus 2016-Juni 2021), Komisaris Utama Perseroan (2009-2016), Komisaris PT Artha Pacific Securities (2003-2004), Direktur PT Artha Pacific Securities (2002-2003), Direktur Utama PT Artha Pacific Securities (2000-2001), Sales Manager PT Cipta Dana Amerta Securities (1994-1996), dan Sales Manager PT Prakarsa Investama (1996-1998).',
+        vision_label: 'VISI',
+        mision_label: 'MISI',
+        vision_content: 'Menjadi perusahaan investasi termuka di Indonesia yang bersandarkan pada 5 pilar yaitu kejujuran, ketekunan, pelayanan, pengalaman dan disiplin.',
+        mision_content: {
+            mission_content1: 'Mengembangkan aset dan sumber daya manusia yang ada secara berkelanjutan.',
+            mission_content2: 'Berinvestasi untuk mencapai keuntungan maksimal dengan tetap memperhatikan risiko usaha.',
+            mission_content3: 'Berupaya untuk terus meningkatkan kinerja Perseroan dalam kerangka pembangunan perekonomian Indonesia yang lebih kokoh.',
+        },
+        ownership_structure_label: 'Struktur Kepemilikan.'
     },
     gcg: {
         annual_report: 'Laporan Tahunan.'
