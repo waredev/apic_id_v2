@@ -27,40 +27,41 @@
                 "route": null
             },
             {
-                "title": "submenu.company_information",
-                "label": "INFORMASI PERUSAHAAN DAN ENTITAS ANAK",
-                "sub": [],
-                "route": "about-company-information"
-            },
-            {
-                "title": "submenu.supporting_professional_institutions",
-                "label": "LEMBAGA PROFESI PENUNJANG",
-                "sub": [],
-                "route": "about-supporting-institution"
-            },
-            {
-                "title": "submenu.award",
-                "label": "PENGHARGAAN",
-                "sub": [],
-                "route": "about-award"
-            },
-            {
-                "title": "submenu.organization_structure",
-                "label": "STRUKTUR ORGANISASI",
-                "sub": [],
-                "route": "about-organization-structure"
-            },
-            {
-                "title": "submenu.ownership_structure",
-                "label": "STRUKTUR KEPEMILIKAN",
-                "sub": [],
-                "route": "about-ownership-structure"
-            },
-            {
-                "title": "submenu.visi_and_mission",
-                "label": "VISI DAN MISI",
-                "sub": [],
-                "route": "about-visi-and-mission"
+                "title": "submenu.company_profile.title",
+                "label": "PROFILE PERUSAHAAN",
+                "sub": [
+                    {
+                        "title": "submenu.company_profile.sub.company_information",
+                        "label": "INFORMASI PERUSAHAAN DAN ENTITAS ANAK",
+                        "route": "about-company-information"
+                    },
+                    {
+                        "title": "submenu.company_profile.sub.supporting_professional_institutions",
+                        "label": "LEMBAGA PROFESI PENUNJANG",
+                        "route": "about-supporting-institution"
+                    },
+                    {
+                        "title": "submenu.company_profile.sub.award",
+                        "label": "PENGHARGAAN",
+                        "route": "about-award"
+                    },
+                    {
+                        "title": "submenu.company_profile.sub.organization_structure",
+                        "label": "STRUKTUR ORGANISASI",
+                        "route": "about-organization-structure"
+                    },
+                    {
+                        "title": "submenu.company_profile.sub.ownership_structure",
+                        "label": "STRUKTUR KEPEMILIKAN",
+                        "route": "about-ownership-structure"
+                    },
+                    {
+                        "title": "submenu.company_profile.sub.visi_and_mission",
+                        "label": "VISI DAN MISI",
+                        "route": "about-visi-and-mission"
+                    }
+                ],
+                "route": null
             },
             {
                 "title": "submenu.corporate_governance.title",
@@ -117,7 +118,7 @@
                 "title": "submenu.annual_report",
                 "label": "ANNUAL REPORT",
                 "sub": [],
-                "route": "about-annual-report"
+                "route": "gcg-annual-report"
             },
             {
                 "title": "submenu.finance_report.title",

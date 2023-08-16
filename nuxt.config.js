@@ -74,6 +74,13 @@ export default {
           'about/company-information': {
             id: '/tentang/informasi-perusahaan-dan-entitas-anak',
             en: '/about/company-and-subsidiary-entity-information',
+          },
+
+
+          // gcg
+          'gcg/annual-report': {
+            id: '/gcg/laporan-tahunan',
+            en: '/gcg/annual-report',
           }
         }
       }

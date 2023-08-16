@@ -1,0 +1,215 @@
+{
+  "title": "Informasi Perusahaan dan Entitas Anak.",
+  "description": "Perseroan menjalankan kegiatan sebagai perusahaan investasi dan melakukan penyertaan investasi modal pada 4 (Empat) entitas anak aktif, yaitu:",
+  "list_entity": [
+    {
+      "name": "PT Pacific Sekuritas Indonesia (“AP”), perusahaan sekuritas yang bergerak di bidang perantara pedagang efek (broker dealer) dan penjamin emisi efek (underwriter)."
+    },
+    {
+      "name": "PT Pacific Capital Investment (“PCI”), perusahaan yang bergerak dalam bidang Manager Investasi."
+    },
+    {
+      "name": "PT Pacific Multi Finance (“PMF”), perusahaan yang bergerak di bidang multifinance."
+    },
+    {
+      "name": "PT Pacific Strategic Invesco (“PSI”), perusahaan yang bergerak di bidang Konsultasi Bisnis."
+    }
+  ],
+  "child_entity_title": "PSI Memiliki entitas anak sebagai berikut:",
+  "child_entity": [
+    {
+      "name": "PT Pacific Life Insurance (“PLI”), Dengan Kegiatan Usaha yaitu menjalankan usaha dibidang Asuransi Jiwa."
+    },
+    {
+      "name": "PT Pacific Life Insurance Syariah (“PLIS”), Dengan Kegiatan Usaha yaitu menjalankan usaha dibidang Asuransi Jiwa Syariah (Saat ini masih sedang dalam proses perizinan dari Otoritas Jasa Keuangan)."
+    }
+  ],
+  "data": [
+    {
+      "title": "PT PACIFIC SEKURITAS INDONESIA (AP)",
+      "list": {
+        "title": "Perusahaan sekuritas yang bergerak di bidang perantara pedagang efek (broker dealer) dan penjamin emisi efek (underwriter) dengan kegiatan usaha sebagai berikut :",
+        "data": [
+          {
+            "value": "Menjalankan usaha sebagai pedagang perantara efek, perdagangan efek dan penjamin emisi efek."
+          },
+          {
+            "value": "Menjalankan kegiatan-kegiatan serta jasa-jasa lainnya yang berhubungan dengan hal tersebut diatas yang secara khusus diperkenankan untuk dilakukan oleh departemen terkait di Republik Indonesia."
+          }
+        ]
+      },
+      "directors": [
+        {
+          "label": "Direktur Utama",
+          "value": "Edy Soetrisno"
+        },
+        {
+          "label": "Direktur",
+          "value": "Kusmanan Rahardja"
+        }
+      ],
+      "commissioners": [
+        {
+          "label": "Komisaris Utama",
+          "value": "Wiyana"
+        },
+        {
+          "label": "Komisaris Independen",
+          "value": "Triadi Pramita Abadi"
+        }
+      ],
+      "children": []
+    },
+    {
+      "title": "PT Pacific Capital Investment (PCI)",
+      "list": {
+        "title": "Dengan kegiatan usaha yaitu menjalankan usaha sebagai Manajer Investasi.",
+        "data": []
+      },
+      "directors": [
+        {
+          "label": "Direktur Utama",
+          "value": "Felix Sindhunata"
+        },
+        {
+          "label": "Direktur",
+          "value": "Tongku Eddy Harahap"
+        }
+      ],
+      "commissioners": [
+        {
+          "label": "Komisaris Utama",
+          "value": "Jon Adijaya"
+        },
+        {
+          "label": "Komisaris Independen",
+          "value": "Eka Rijani Tjahja"
+        }
+      ],
+      "children": []
+    },
+    {
+      "title": "PT PACIFIC MULTI FINANCE (PMF)",
+      "list": {
+        "title": "Dengan kegiatan usaha yaitu jasa pengelolaan keuangan serta lembaga pembiayaan (finance) lainnya.",
+        "data": []
+      },
+      "directors": [
+        {
+          "label": "Direktur",
+          "value": "Jepri Hartono"
+        },
+        {
+          "label": "Direktur",
+          "value": "Suryandi"
+        },
+        {
+          "label": "Direktur",
+          "value": "Jerry Wahyudi"
+        }
+      ],
+      "commissioners": [
+        {
+          "label": "Komisaris Utama",
+          "value": "Wiyana"
+        },
+        {
+          "label": "Komisaris Independen",
+          "value": "Muhardi"
+        }
+      ],
+      "children": []
+    },
+    {
+      "title": "PT PACIFIC STRATEGIC INVESCO (PSI)",
+      "list": {
+        "title": "Dengan kegiatan usaha yaitu Bergerak dalam bidang Konsultasi Bisnis.",
+        "data": []
+      },
+      "directors": [
+        {
+          "label": "Direktur",
+          "value": "Wiyana"
+        }
+      ],
+      "commissioners": [
+        {
+          "label": "Komisaris",
+          "value": "Jon Adijaya"
+        }
+      ],
+      "children": [
+        {
+          "title": "PT PACIFIC LIFE INSURANCE (PLI)",
+          "list": {
+            "title": "Dengan kegiatan usaha yaitu menjalankan usaha dibidang Asuransi Jiwa.",
+            "data": []
+          },
+          "directors": [
+            {
+              "label": "Direktur Utama",
+              "value": "R. Sasanto Wiratmoko Simson"
+            },
+            {
+              "label": "Direktur Kepatuhan",
+              "value": "Irwan Surjadi Tedjasulaksana"
+            },
+            {
+              "label": "Direktur Operasional",
+              "value": "Swastika"
+            }
+          ],
+          "commissioners": [
+            {
+              "label": "Komisaris Utama",
+              "value": "Jon Adijaya"
+            },
+            {
+              "label": "Komisaris Independen",
+              "value": "Indera"
+            },
+            {
+              "label": "Komisaris Independen",
+              "value": "Tubagus Syafrial"
+            }
+          ]
+        },
+        {
+          "title": "PT PACIFIC LIFE INSURANCE SYARIAH (PLIS)",
+          "list": {
+            "title": "Dengan kegiatan usaha yaitu menjalankan usaha dibidang Asuransi Jiwa Syariah (Saat ini masih sedang dalam proses perizinan dari Otoritas Jasa Keuangan).",
+            "data": []
+          },
+          "directors": [
+            {
+              "label": "Direktur Utama",
+              "value": "Kasturi Yanu S."
+            },
+            {
+              "label": "Direktur",
+              "value": "Syaiful Bahri"
+            },
+            {
+              "label": "Direktur",
+              "value": "Lucky Aprillianto"
+            }
+          ],
+          "commissioners": [
+            {
+              "label": "Komisaris Utama",
+              "value": "Wiyana"
+            },
+            {
+              "label": "Komisaris Independen",
+              "value": "Muhammad Harsanto"
+            },
+            {
+              "label": "Komisaris Independen",
+              "value": "Saebani Hardjono"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

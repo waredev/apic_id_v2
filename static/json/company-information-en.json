@@ -1,0 +1,215 @@
+{
+  "title": "The Company and Subsidiary Information.",
+  "description": "The Company carries out activities as an investment company and invests capital in 4 (four) active subsidiaries, namely:",
+  "list_entity": [
+    {
+      "name": "PT Pacific Sekuritas Indonesia (“AP”), a securities company engaged in the business of broker dealer and underwriter."
+    },
+    {
+      "name": "PT Pacific Capital Investment (“PCI”), a company engaged in the field of Investment Manager."
+    },
+    {
+      "name": "PT Pacific Multi Finance (“PMF”), a company engaged in the multi-finance sector."
+    },
+    {
+      "name": "PT Pacific Strategic Invesco (“PSI”), a company engaged in business consulting."
+    }
+  ],
+  "child_entity_title": "PSI has the following subsidiaries:",
+  "child_entity": [
+    {
+      "name": "PT Pacific Life Insurance (“PLI”), with its business activities, i.e., running a Life Insurance business."
+    },
+    {
+      "name": "PT Pacific Life Insurance Syariah (“PLIS”), with its business activities, i.e., running a business in the field of Sharia Life  Insurance (currently still in the process of licensing from the Financial Services Authority)."
+    }
+  ],
+  "data": [
+    {
+      "title": "PT PACIFIC SEKURITAS INDONESIA (AP)",
+      "list": {
+        "title": "A securities company engaged in the field of broker dealer and underwriter, with the following business activities:",
+        "data": [
+          {
+            "value": "Operating a business as a securities brokerage, securities trading, and securities underwriter."
+          },
+          {
+            "value": "Carry out other activities and services related to the above which are specifically allowed to be carried out by the relevant departments in the Republic of Indonesia."
+          }
+        ]
+      },
+      "directors": [
+        {
+          "label": "President Director",
+          "value": "Edy Soetrisno"
+        },
+        {
+          "label": "Director",
+          "value": "Kusmanan Rahardja"
+        }
+      ],
+      "commissioners": [
+        {
+          "label": "President Commissioner",
+          "value": "Wiyana"
+        },
+        {
+          "label": "Independent Commissioner",
+          "value": "Triadi Pramita Abadi"
+        }
+      ],
+      "children": []
+    },
+    {
+      "title": "PT Pacific Capital Investment (PCI)",
+      "list": {
+        "title": "With its business activities, namely conducting business as an Investment Manager.",
+        "data": []
+      },
+      "directors": [
+        {
+          "label": "President Director",
+          "value": "Felix Sindhunata"
+        },
+        {
+          "label": "Director",
+          "value": "Tongku Eddy Harahap"
+        }
+      ],
+      "commissioners": [
+        {
+          "label": "President Commissioner",
+          "value": "Jon Adijaya"
+        },
+        {
+          "label": "Independent Commissioner",
+          "value": "Eka Rijani Tjahja"
+        }
+      ],
+      "children": []
+    },
+    {
+      "title": "PT PACIFIC MULTI FINANCE (PMF)",
+      "list": {
+        "title": "With its business activities, namely financial management services and other financing institutions.",
+        "data": []
+      },
+      "directors": [
+        {
+          "label": "Director",
+          "value": "Jepri Hartono"
+        },
+        {
+          "label": "Director",
+          "value": "Suryandi"
+        },
+        {
+          "label": "Director",
+          "value": "Jerry Wahyudi"
+        }
+      ],
+      "commissioners": [
+        {
+          "label": "President Commissioner",
+          "value": "Wiyana"
+        },
+        {
+          "label": "Independent Commissioner",
+          "value": "Muhardi"
+        }
+      ],
+      "children": []
+    },
+    {
+      "title": "PT PACIFIC STRATEGIC INVESCO (PSI)",
+      "list": {
+        "title": "With its business activities, namely engaged in Business Consulting.",
+        "data": []
+      },
+      "directors": [
+        {
+          "label": "Director",
+          "value": "Wiyana"
+        }
+      ],
+      "commissioners": [
+        {
+          "label": "Commissioner",
+          "value": "Jon Adijaya"
+        }
+      ],
+      "children": [
+        {
+          "title": "PT PACIFIC LIFE INSURANCE (PLI)",
+          "list": {
+            "title": "With its business activities, namely running a business in the Life Insurance sector.",
+            "data": []
+          },
+          "directors": [
+            {
+              "label": "President Director",
+              "value": "R. Sasanto Wiratmoko Simson"
+            },
+            {
+              "label": "Compliance Director",
+              "value": "Irwan Surjadi Tedjasulaksana"
+            },
+            {
+              "label": "Director of Operations",
+              "value": "Swastika"
+            }
+          ],
+          "commissioners": [
+            {
+              "label": "President Commissioner",
+              "value": "Jon Adijaya"
+            },
+            {
+              "label": "Independent Commissioner",
+              "value": "Indera"
+            },
+            {
+              "label": "Independent Commissioner",
+              "value": "Tubagus Syafrial"
+            }
+          ]
+        },
+        {
+          "title": "PT PACIFIC LIFE INSURANCE SYARIAH (PLIS)",
+          "list": {
+            "title": "With its business activities, namely running a business in the field of Sharia Life Insurance (currently still in the process of licensing from the Financial Services Authority).",
+            "data": []
+          },
+          "directors": [
+            {
+              "label": "President Director",
+              "value": "Kasturi Yanu S."
+            },
+            {
+              "label": "Director",
+              "value": "Syaiful Bahri"
+            },
+            {
+              "label": "Director",
+              "value": "Lucky Aprillianto"
+            }
+          ],
+          "commissioners": [
+            {
+              "label": "President Commissioner",
+              "value": "Wiyana"
+            },
+            {
+              "label": "Independent Commissioner",
+              "value": "Muhammad Harsanto"
+            },
+            {
+              "label": "Independent Commissioner",
+              "value": "Saebani Hardjono"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
