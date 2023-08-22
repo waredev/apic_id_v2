@@ -1,6 +1,6 @@
 <template>
     <div class="absolute w-full h-screen xl:px-0 px-10 bg-black top-0 z-50 flex items-center justify-center bg-opacity-60">
-        <div class="w-[30rem] h-[30rem] bg-white custom-shadow rounded-xl relative" @click.stop>
+        <div class="w-[30rem] h-auto pb-10 bg-white custom-shadow rounded-xl relative" @click.stop>
             <div class="absolute -right-3 -top-3 cursor-pointer w-8 h-8 rounded-full flex items-center justify-center bg-white" @click="$emit('close-modal')">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 text-primary h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />

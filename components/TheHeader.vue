@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- xl:px-32 px-8 -->
         <div class="w-full xl:h-36 h-20 fixed z-50" :class="getBackground()">
             <div class="hidden xl:flex w-full h-12 xl:px-32 px-8 border-b font-arian-bold items-center justify-between">
                 <div class="flex items-center space-x-10">
@@ -55,7 +56,7 @@
                         <div class="font-arian-bold xl:text-2xl text-lg xl:ml-5 ml-2">PACIFIC STRATEGIC FINANCIAL</div>
                     </div>
                 </nuxt-link>
-                <div class="hidden xl:flex items-center space-x-10 font-arian-bold">
+                <div class="hidden 2xl:flex items-center space-x-10 font-arian-bold">
                     <div v-for="(menu, index) in MENU_DATA" :key="index">
                         <nuxt-link v-if="menu.sub.length === 0" :to="localePath(menu.route)">
                             <div class="text-xl hover:text-primary">{{ $t(menu.title) }}</div>
@@ -95,7 +96,7 @@
                     </div>
 
                 </div>
-                <button @click="showMenu = !showMenu" class="xl:hidden flex bg-primary bg-opacity-10 p-2 items-center justify-center rounded-md">
+                <button @click="showMenu = !showMenu" class="2xl:hidden flex bg-primary bg-opacity-10 p-2 items-center justify-center rounded-md">
                     <svg v-if="!showMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-8 h-8 text-primary">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
@@ -108,7 +109,7 @@
         </div>
 
         <!-- mobile version -->
-        <div :class="showMenu ? 'w-screen h-screen bg-white px-8 fixed z-20 transition-all' : 'hidden'">
+        <div :class="showMenu ? 'w-screen h-screen bg-white md:px-32 px-8 md:pt-14 pt-5 fixed z-20 transition-all' : 'hidden'">
             <div class="font-arian-bold mt-32">
                 <div v-for="(menu, index) in MENU_DATA" :key="index">
                     <nuxt-link v-if="menu.sub.length === 0" :to="localePath(menu.route)">

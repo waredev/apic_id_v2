@@ -15,3 +15,10 @@
 .custom-shadow {
     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
 }
+
+.justify-custom {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+    text-align: justify;
+}

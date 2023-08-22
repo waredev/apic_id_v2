@@ -3,9 +3,15 @@
         <div class="xl:px-32 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
             <div class="xl:text-4xl text-2xl">{{ $t('gcg.annual_report') }}</div>
             <div class="p-5 border rounded-md mt-10">
-                <div v-for="(item, index) in annual_reports" :key="index" class="mb-5">
+                <div v-if="loading" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6 text-black animate-spin">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                    </svg>
+                    <div class="ml-2 text-black">Loading. . .</div>
+                </div>
+                <div v-if="!loading" v-for="(item, index) in data" :key="index" class="mb-5">
                     <div class="text-xl">{{item.attributes.label}}</div>
-                    <a target="_blank" :href="host + item.attributes.file.data.attributes.url" class="w-96 h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center justify-between px-3 rounded-md">
+                    <a target="_blank" :href="$axios.defaults.baseURL + item.attributes.file.data.attributes.url" class="w-96 h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center justify-between px-3 rounded-md">
                         <div class="group-hover:text-white">{{item.attributes.label}}</div>
                         <div class="border-l px-4 group-hover:border-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:text-white">
@@ -23,7 +29,6 @@
         name: 'AnnualReportPage',
         data(){
             return {
-                host: 'http://localhost:1337',
                 annual_reports: [
                     {
                         "id": 2,
@@ -98,6 +103,20 @@
                         }
                     }
                 ],
+                data: [],
+                loading: true,
+            }
+        },
+        mounted(){
+            this.fetchData();
+        },
+        methods: {
+            async fetchData(){
+                const res = await this.$store.dispatch('fetchAnnualReport');
+                this.data = res.data?.data;
+                setTimeout(() => {
+                    this.loading = false;
+                },2000);
             }
         }
     }
