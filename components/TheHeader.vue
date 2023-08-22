@@ -1,8 +1,8 @@
 <template>
     <div>
-        <!-- xl:px-32 px-8 -->
+        <!-- xl:px-20 px-8 -->
         <div class="w-full xl:h-36 h-20 fixed z-50" :class="getBackground()">
-            <div class="hidden xl:flex w-full h-12 xl:px-32 px-8 border-b font-arian-bold items-center justify-between">
+            <div class="hidden xl:flex w-full h-12 xl:px-20 px-8 border-b font-arian-bold items-center justify-between">
                 <div class="flex items-center space-x-10">
                     <div class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -49,22 +49,22 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full h-20 xl:px-32 px-8 xl:mt-2 mt-0 flex items-center justify-between">
+            <div class="w-full h-20 xl:px-20 px-8 xl:mt-2 mt-0 flex items-center justify-between">
                 <nuxt-link :to="localePath('/')">
                     <div class="flex items-center">
                         <img src="~assets/images/logo.png" class="xl:w-14 xl:h-14 w-12 h-12"/>
-                        <div class="font-arian-bold xl:text-2xl text-lg xl:ml-5 ml-2">PACIFIC STRATEGIC FINANCIAL</div>
+                        <div class="font-arian-bold xl:text-xl text-lg xl:ml-5 ml-2">PACIFIC STRATEGIC FINANCIAL</div>
                     </div>
                 </nuxt-link>
-                <div class="hidden 2xl:flex items-center space-x-10 font-arian-bold">
+                <div class="hidden xl:flex items-center space-x-10 font-arian-bold">
                     <div v-for="(menu, index) in MENU_DATA" :key="index">
                         <nuxt-link v-if="menu.sub.length === 0" :to="localePath(menu.route)">
-                            <div class="text-xl hover:text-primary">{{ $t(menu.title) }}</div>
+                            <div class="text-md hover:text-primary">{{ $t(menu.title) }}</div>
                         </nuxt-link>
 
                         <div v-else class="relative group/parent cursor-pointer">
                             <div class='group-hover/parent:text-primary flex items-center'>
-                                <div class="text-xl">{{ $t(menu.title) }}</div>
+                                <div class="text-md">{{ $t(menu.title) }}</div>
                                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 ml-1 transition-all duration-100 rotate-0 group-hover/parent:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </div>
                             <div class="absolute bg-transparent transition-all scale-0 group-hover/parent:scale-100">
@@ -96,7 +96,7 @@
                     </div>
 
                 </div>
-                <button @click="showMenu = !showMenu" class="2xl:hidden flex bg-primary bg-opacity-10 p-2 items-center justify-center rounded-md">
+                <button @click="showMenu = !showMenu" class="xl:hidden flex bg-primary bg-opacity-10 p-2 items-center justify-center rounded-md">
                     <svg v-if="!showMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-8 h-8 text-primary">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
@@ -109,7 +109,7 @@
         </div>
 
         <!-- mobile version -->
-        <div :class="showMenu ? 'w-screen h-screen bg-white md:px-32 px-8 md:pt-14 pt-5 fixed z-20 transition-all' : 'hidden'">
+        <div :class="showMenu ? 'w-screen h-screen bg-white px-8 fixed z-20 transition-all' : 'hidden'">
             <div class="font-arian-bold mt-32">
                 <div v-for="(menu, index) in MENU_DATA" :key="index">
                     <nuxt-link v-if="menu.sub.length === 0" :to="localePath(menu.route)">

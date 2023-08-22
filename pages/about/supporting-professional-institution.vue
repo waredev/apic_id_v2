@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="xl:px-32 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
+        <div class="xl:px-20 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
         
         </div>
     </div>

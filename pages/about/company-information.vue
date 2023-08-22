@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="xl:px-32 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
+        <div class="xl:px-20 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
             <div class="xl:text-4xl text-2xl">{{ data.title }}</div>
             <div class="mt-10 xl:pr-[30rem] pr-0">
                 <div class="text-xl text-slate-700">{{ data.description }}</div>

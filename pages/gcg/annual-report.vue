@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="xl:px-32 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
+        <div class="xl:px-20 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
             <div class="xl:text-4xl text-2xl">{{ $t('gcg.annual_report') }}</div>
             <div class="p-5 border rounded-md mt-10">
                 <div v-if="loading" class="flex items-center">

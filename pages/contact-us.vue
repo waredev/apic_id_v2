@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="xl:px-32 px-8 font-arian-bold xl:pt-60 pt-32">
+        <div class="xl:px-20 px-8 font-arian-bold xl:pt-60 pt-32">
             <div class="xl:text-4xl text-2xl">{{ $t('contact.contact_label') }}</div>
             <div class="w-full border my-20 rounded-xl p-10">
                 <div class="text-xl">Head Office</div>
