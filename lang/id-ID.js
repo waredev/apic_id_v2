@@ -57,7 +57,8 @@ export default {
         about_short: 'PT Pacific Strategic Financial Tbk (“Perseroan”) merupakan perusahaan yang bergerak dalam bidang . . .',
         about_company: 'PT Pacific Strategic Financial Tbk (“Perseroan”) merupakan perusahaan yang bergerak dalam bidang Investasi dan Aktivitas Konsultasi Manajemen Lainnya yang aktif di Pasar Modal Indonesia. Perseroan bergerak melalui 4 (empat) Entitas Anak, yakni PT Pacific Capital Investment, PT Pacific Sekuritas Indonesia, PT Pacific Multi Finance, dan PT Pacific Strategic Invesco (melalui PT Pacific Life Insurance) Perseroan terus berupaya untuk tetap konsisten dan bisa menjadi Perusahaan investasi yang terkemuka di Pasar Modal Indonesia.',
         warning: 'Perhatian!',
-        warning_content: 'Diberitahukan kepada masyarakat untuk lebih waspada terhadap pihak-pihak yang tidak bertangung jawab yang mengatasnamakan Perseroan dan Entitas Anak. untuk informasi lebih lanjut dapat menghubungi kami ke :'
+        warning_content: 'Diberitahukan kepada masyarakat untuk lebih waspada terhadap pihak-pihak yang tidak bertangung jawab yang mengatasnamakan Perseroan dan Entitas Anak. untuk informasi lebih lanjut dapat menghubungi kami ke :',
+        close: 'KELUAR'
     },
     about: {
         management: {

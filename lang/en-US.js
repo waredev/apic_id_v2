@@ -57,7 +57,8 @@ export default {
         about_short: 'PT. Pacific Strategic Financial Tbk (the “Company”) is a company engaged in Investment and Other Management . . .',
         about_company: 'PT. Pacific Strategic Financial Tbk (the “Company”) is a company engaged in Investment and Other Management Consulting Activities that is active in the Indonesian Capital Market. The Company operates through 4 (four) Subsidiaries: PT Pacific Capital Investment, PT Pacific Sekuritas Indonesia, PT Pacific Multi Finance, and PT Pacific Strategic Invesco (through PT Pacific Life Insurance). The Company strives to remain consistent and become a leading investment company in the Indonesian Capital Market.',
         warning: 'Warning!',
-        warning_content: 'The public is advised to be more aware of irresponsible parties acting on behalf of the Company and its Subsidiaries. For more information, you can contact us at:'
+        warning_content: 'The public is advised to be more aware of irresponsible parties acting on behalf of the Company and its Subsidiaries. For more information, you can contact us at:',
+        close: 'CLOSE'
     },
     about: {
         management: {
