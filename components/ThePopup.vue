@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute w-full h-screen xl:px-0 px-10 bg-black top-0 z-50 flex items-center justify-center bg-opacity-10 backdrop-blur">
+    <div class="absolute w-full h-screen xl:px-0 px-10 bg-black top-0 z-50 flex items-center justify-center bg-opacity-10 custom-drop-blur">
         <div class="bg-white w-[30rem] rounded-3xl custom-shadow pb-14 relative">
             <div class="bg-[url('~/assets/images/group-391.png')] rounded-t-3xl w-full xl:h-64 h-40 bg-cover bg-no-repeat flex justify-center relative">
                 <div class="absolute right-2 top-2 cursor-pointer w-8 h-8 rounded-full flex items-center justify-center border-2 border-white" @click="$emit('close-modal')">

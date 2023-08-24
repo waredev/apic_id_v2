@@ -22,3 +22,8 @@
     word-spacing: -0.05em;
     text-align: justify;
 }
+
+.custom-drop-blur {
+    backdrop-filter: blur(8px);
+}
+  
