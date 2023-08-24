@@ -107,7 +107,7 @@ export default {
   ],
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://192.168.8.116:1337',
+    baseURL: 'https://frozen-sierra-62579-15412e533ac0.herokuapp.com',
   },
 
   server: {     
