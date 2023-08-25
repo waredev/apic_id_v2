@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="xl:px-20 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
-            <div class="xl:text-4xl text-2xl">{{ $t('about.award_label') }}</div>
+            <div class="xl:text-4xl text-2xl">{{ $t('about.work_guidelines') }}</div>
             <div class="p-5 border rounded-md mt-10">
                 <div v-if="loading" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6 text-black animate-spin">
@@ -27,7 +27,7 @@
 </template>
 <script>
     export default {
-        name: 'AwardPage',
+        name: 'WorkGuidelinesPage',
         data(){
             return {
                 data: [],
@@ -39,7 +39,7 @@
         },
         methods: {
             async fetchData(){
-                const res = await this.$store.dispatch('fetchAwards');
+                const res = await this.$store.dispatch('fetchWorkGuidelines');
                 this.data = res.data?.data;
                 this.loading = false;
             }

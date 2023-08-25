@@ -70,7 +70,7 @@
                     {
                         "title": "submenu.corporate_governance.sub.guidlines_commissioners",
                         "label": "PEDOMAN KERJA KOMISARIS DAN DIREKSI",
-                        "route": "about-guidlines-commissioners"
+                        "route": "about-work-guidelines"
                     },
                     {
                         "title": "submenu.corporate_governance.sub.audit_commite",
@@ -85,7 +85,7 @@
                     {
                         "title": "submenu.corporate_governance.sub.risk_manajement",
                         "label": "MANAJEMEN RISIKO",
-                        "route": "about-risk-manajement"
+                        "route": "about-risk-management"
                     }
                 ],
                 "route": null
@@ -96,12 +96,12 @@
                 "sub": [
                     {
                         "title": "submenu.disclosure_information.sub.audit_commite_information",
-                        "label": "AUDIT COMMITTEE INFORMATION",
-                        "route": "about-audit-commite-information"
+                        "label": "INFORMASI KOMITE AUDI",
+                        "route": "about-information-committee-audit"
                     },
                     {
                         "title": "submenu.disclosure_information.sub.corporate_social_responsibility",
-                        "label": "CORPORATE SOCIAL RESPONSIBILITY",
+                        "label": "INFORMASI TANGGUNG JAWAB SOSIAL PERUSAHAAN",
                         "route": "about-corporate-social-responsibility"
                     }
                 ],
@@ -127,12 +127,12 @@
                     {
                         "title": "submenu.finance_report.sub.annual_finance_report",
                         "label": "LAPORAN KEUANGAN TAHUNAN",
-                        "route": "about-annual_finance_report"
+                        "route": "gcg-finance-report-yearly"
                     },
                     {
                         "title": "submenu.finance_report.sub.middle_annual_finance_report",
                         "label": "LAPORAN KEUANGAN TENGAH TAHUNAN",
-                        "route": "about-middle-annual_finance_report"
+                        "route": "gcg-finance-report-middle-yearly"
                     }
                 ],
                 "route": null
@@ -141,13 +141,13 @@
                 "title": "submenu.rups",
                 "label": "RUPS",
                 "sub": [],
-                "route": "about-rups"
+                "route": "gcg-rups"
             },
             {
                 "title": "submenu.shareholders_information",
                 "label": "INFORMASI PEMEGANG SAHAM",
                 "sub": [],
-                "route": "about-shareholders-information"
+                "route": "gcg-shareholder"
             }
         ],
         "route": "/"

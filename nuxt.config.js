@@ -92,12 +92,52 @@ export default {
             id: '/tentang/struktur-kepemilikan',
             en: '/about/ownership-structure',
           },
+          'about/work-guidelines': {
+            id: '/tentang/pedoman-kerja-komisaris-dan-direksi',
+            en: '/about/work-guidelines-for-the-commissioners-and-directors',
+          },
+          'about/audit-commite': {
+            id: '/tentang/piagam-audit',
+            en: '/about/audit-committee',
+          },
+          'about/code-of-conduct': {
+            id: '/tentang/kode-etik',
+            en: '/about/code-of-conduct',
+          },
+          'about/risk-management': {
+            id: '/tentang/manajemen-risiko',
+            en: '/about/risk-management',
+          },
+          'about/information-committee-audit': {
+            id: '/tentang/informasi-komite-audit',
+            en: '/about/information-on-audit-committees',
+          },
+          'about/corporate-social-responsibility': {
+            id: '/tentang/informasi-tanggung-jawab-sosial-perusahaan',
+            en: '/about/corporate-social-responsibility',
+          },
 
 
           // gcg
           'gcg/annual-report': {
             id: '/gcg/laporan-tahunan',
             en: '/gcg/annual-report',
+          },
+          'gcg/rups': {
+            id: '/gcg/rups',
+            en: '/gcg/gms',
+          },
+          'gcg/shareholder': {
+            id: '/gcg/informasi-pemegang-saham',
+            en: '/gcg/shareholder',
+          },
+          'gcg/finance-report/yearly': {
+            id: '/gcg/laporan-keuangan-tahunan',
+            en: '/gcg/annual-financial-reports',
+          },
+          'gcg/finance-report/middle-yearly': {
+            id: '/gcg/laporan-keuangan-tengah-tahunan',
+            en: '/gcg/semi-annual-financial-reports',
           }
         }
       }
@@ -107,7 +147,8 @@ export default {
   ],
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://frozen-sierra-62579-15412e533ac0.herokuapp.com',
+    // baseURL: 'https://frozen-sierra-62579-15412e533ac0.herokuapp.com',
+    baseURL: 'http://127.0.0.1:1337'
   },
 
   server: {     

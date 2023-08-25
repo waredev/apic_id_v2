@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="xl:px-20 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
-            <div class="xl:text-4xl text-2xl">{{ $t('about.award_label') }}</div>
+            <div class="xl:text-4xl text-2xl">{{ $t('gcg.financial_report_middle_yearly') }}</div>
             <div class="p-5 border rounded-md mt-10">
                 <div v-if="loading" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6 text-black animate-spin">
@@ -9,7 +9,7 @@
                     </svg>
                     <div class="ml-2 text-black">Loading. . .</div>
                 </div>
-                <div v-if="!loading" v-for="(item, index) in data" :key="index" class="mb-5">
+                <div v-if="!loading && data.length > 0" v-for="(item, index) in data" :key="index" class="mb-5">
                     <div class="text-xl">{{item.attributes.label}}</div>
                     <a target="_blank" :href="$axios.defaults.baseURL + item.attributes.file.data.attributes.url" class="w-96 h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
                         <img src="~/assets/images/pdf.png" class="w-8 h-8" alt="pdf" />
@@ -27,7 +27,7 @@
 </template>
 <script>
     export default {
-        name: 'AwardPage',
+        name: 'FinancialReportMiddleYearlyPage',
         data(){
             return {
                 data: [],
@@ -39,7 +39,7 @@
         },
         methods: {
             async fetchData(){
-                const res = await this.$store.dispatch('fetchAwards');
+                const res = await this.$store.dispatch('fetchFiancialReportMiddleYearly');
                 this.data = res.data?.data;
                 this.loading = false;
             }

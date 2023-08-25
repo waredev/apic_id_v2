@@ -40,7 +40,7 @@ export default {
                 corporate_social_responsibility: 'INFORMASI TANGGUNG JAWAB SOSIAL PERUSAHAAN'
             }
         },
-        annual_report: 'ANNUAL REPORT',
+        annual_report: 'LAPORAN TAHUNAN',
         finance_report: {
             title: 'LAPORAN KEUANGAN',
             sub: {
@@ -62,7 +62,7 @@ export default {
     },
     about: {
         management: {
-            board_commisioner_title: 'Profil Dewan Komisaris.',
+            board_commisioner_title: 'Profil Dewan Komisaris',
             board_commisioner_content1: 'Warga Negara Indonesia, 57 tahun, memperoleh gelar Sarjana Ekonomi dari Universitas Gadjah Mada Tahun 1983. Saat ini menjabat sebagai Komisaris Utama Perseroan, sebelumnya beliau menjabat sebagai Head Division Satuan Kerja Audit Intern Retail and Sharia Audit Division PT Bank Maybank Indonesia Tbk (Agustus 2016–Agustus 2017), Head Division Satuan Kerja Audit Intern Credit, Sharia and Subsidiaries Audit Division PT Bank Maybank Indonesia Tbk (Oktober 2006-Juli 2016), Loan Center Head/ SME Commercial Banking Center Head PT Bank Internasional Indonesia Kantor Wilayah Jakarta Juanda -SME Commercial Banking Center (April 2005-Oktober 2006), Loan Center Head/ SME Commercial Banking Center Head PT Bank Internasional Indonesia Kantor Wilayah Jawa Tengah & DIY Loan Center/SME Commercial Banking Center (Januari 2003–Maret 2005), Coordinator Foreclosed Company PT Bank Internasional Indonesia Asset Disposal and Collection Division Foreclosed Company Department (Juni 2002–Desember 2002), Loan Recovery Manager PT Bank Internasional Indonesia – Kantor Fatmawati Loan Work Out Non Corporate (Mei 1999-Mei 2002), Loan Recovery Manager PT Bank Internasional Indonesia – Divisi KPR Loan Recovery Department (November 1997-April 1999), Branch Manager PT Bank Internasional Indonesia Kantor Cabang Yogyakarta (Februari 1995-November 1997), Sub Branch Manager PT Bank Internasional Indonesia Kantor Cabang Pembantu Pondok Indah (Agustus 1993-Februari 1995), Sub Branch Manager PT Bank Internasional Indonesia Kantor Cabang Pembantu Pasar Minggu/MT Haryono (Januari 1991-Agustus 1993), Account Officer PT Bank Internasional Indonesia Kantor Cabang Panglima Polim (Februari 1990–Desember 1990), dan trainee PT Bank Internasional Indonesia – Divisi Sumber Daya Manusia (Februari 1989-Januari 1990).',
             board_commisioner_content2: 'Warga negara Indonesia, 57 tahun. Memperoleh gelar Sarjana dari Universitas Pembangunan Nasional (UPN) Tahun 1990. Saat ini menjabat sebagai Komisaris Independen Perseroan, sebelumnya beliau menjabat sebagai Departement Head / Senior Manager Bank CIMB Niaga – Card Production Unit Kartu Kredit & Debet Officer (2009–2019), Departement Head / Senior Manager Bank CIMB Niaga – Risk Management Unit Card Center (2007-2009), Manager Bank CIMB Niaga – Card Delivery Unit Card Center (2006-2007), Manager Bank CIMB Niaga – Card Embosing & Statement Unit Card Center (2005-2006), Manager Bank CIMB Niaga – Operasional Electronik Delivery Chanel (2003-2005), Manager Bank CIMB Niaga –Sundries Operasional Card center (2000-2003), Section Head Bank CIMB Niaga – Sundries KP Privat Banking (1997-2000), Section Head Bank CIMB Niaga –Sundries KP Niaga Tower (1995-1997) dan Officer Bank CIMB Niaga – Accounting Operasional (1990-1995).'
         },
@@ -71,8 +71,8 @@ export default {
         board_of_commissioner_label: 'DEWAN KOMISARIS',
         president_commissioner_label: 'KOMISARIS UTAMA',
         independent_commissioner_label: 'KOMISARIS INDEPENDEN',
-        organization_structure_label: 'Struktur Organisasi.',
-        board_of_director_label: 'Profil Direksi.',
+        organization_structure_label: 'Struktur Organisasi',
+        board_of_director_label: 'Profil Direksi',
         president_director_label: 'DIREKTUR UTAMA',
         director_label: 'DIREKTUR',
         board_of_director_content1: 'Warga negara Indonesia, 55 tahun. Memperoleh gelar Magister Manajemen dari Sekolah Tinggi Ilmu Ekonomi (STIE) Supra,Jakarta Tahun 2005 dan Sarjana Ekonomi jurusan Akuntansi dari Universitas AIrlangga Tahun 1992. Saat ini menjabat sebagai Direktur Utama Perseroan, sebelumnya beliau menjabat sebagai Komisaris Utama Perseroan (Agustus 2016-Juni2021), Associate Director PT Pacific Capital (Juli 2012-Juni 2014), General Manager PT Royal Trust Capital (2011-2012), General Manager PT MNC Securities (Mei 2000-November 2011), Vice President PT Bhakti Investama Tbk (November 1999-Mei 2000), Internal Controller PT Danatama Makmur Securities (September 1997-Oktober 1999), Direktur PT Bomar Securities (Desember 1994-September 1997), Branch Manager PT Dharmala Securities (November 1989-Desember 1994) dan Auditor di Kantor Akuntan Publik dan Konsultan Pajak (1987-1989).',
@@ -85,10 +85,22 @@ export default {
             mission_content2: 'Berinvestasi untuk mencapai keuntungan maksimal dengan tetap memperhatikan risiko usaha.',
             mission_content3: 'Berupaya untuk terus meningkatkan kinerja Perseroan dalam kerangka pembangunan perekonomian Indonesia yang lebih kokoh.',
         },
-        ownership_structure_label: 'Struktur Kepemilikan.'
+        ownership_structure_label: 'Struktur Kepemilikan',
+        supporting_professional_institutions: 'Lembaga Profesi Penunjang',
+        award_label: 'Penghargaan',
+        work_guidelines: 'Pedoman Kerja Komisaris dan Direksi',
+        audit_commite_label: 'Piagam Audit',
+        code_of_conduct: 'Kode Etik',
+        risk_manajement: 'Manajemen Risiko',
+        information_committee_audit_label: 'Informasi Komite Audit',
+        corporate_social_responsibility_label: 'Informasi Tanggung Jawab Sosial Perusahaan'
     },
     gcg: {
-        annual_report: 'Laporan Tahunan.'
+        annual_report: 'Laporan Tahunan',
+        rups: 'RUPS',
+        shareholder: 'Informasi Pemegang Saham',
+        financial_report_yearly: 'Laporan Keuangan Tahunan',
+        financial_report_middle_yearly: 'Laporan Keuangan Tengah Tahunan'
     },
     contact: {
         contact_label: 'Hubungi kami untuk informasi lebih lanjut.'
