@@ -8,7 +8,7 @@
             <div class="ml-2 text-black">Loading. . .</div>
         </div>
         <div v-if="!loading && data" class="mb-5 mt-8">
-            <a target="_blank" :href="$axios.defaults.baseURL + data" class="w-96 h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
+            <a target="_blank" :href="$axios.defaults.baseURL + data" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
                 <img src="~/assets/images/pdf.png" class="w-6" alt="pdf" />
                 <div class="group-hover:text-white font-arian-demi ml-2">{{ $t('gcg.shareholder') }}</div>
                 <div class="border-l px-4 group-hover:border-white ml-auto">
