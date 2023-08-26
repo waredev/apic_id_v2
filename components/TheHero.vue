@@ -4,7 +4,7 @@
       <div class="xl:px-20 px-8 xl:pt-96 pt-40 font-arian-bold relative z-10">
           <div class="xl:text-7xl text-5xl">Pacific Strategic <br>Financial Tbk.</div>
           <div class="text-paraph mt-5 font-arian-demi text-lg xl:w-4/12 w-full">{{ $t('home.about_short') }}</div>
-          <button class="bg-primary rounded-lg px-5 py-3 text-white text-xl mt-4">{{ $t('home.read_more') }}</button>
+          <button @click="$emit('scroll-to')" class="bg-primary rounded-lg px-5 py-3 text-white text-xl mt-4">{{ $t('home.read_more') }}</button>
       </div>
       <img src="~/assets/images/hero-hand.png" class="xl:flex object-contain absolute right-0 z-0 bottom-0 2xl:w-[58.813rem] md:w-[35rem] w-[20rem]">
     </div>

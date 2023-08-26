@@ -1,6 +1,6 @@
 <template>
   <div>
-    <the-hero/>
+    <the-hero @scroll-to="scrollToTop" />
     <the-popup v-show="showModal" @close-modal="onCloseModal"/>
     <div class="xl:px-20 px-8 font-arian-bold py-32 grid xl:grid-cols-2 grid-cols-none xl:gap-32 gap-0">
       <div class="">
@@ -23,7 +23,11 @@ export default {
     }
   },
   mounted(){
-    this.toggleBodyScrollbar(true)
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    this.toggleBodyScrollbar(true);
   },
   methods: {
     toggleBodyScrollbar(visible) {
@@ -36,7 +40,13 @@ export default {
     onCloseModal(){
       this.showModal = false;
       this.toggleBodyScrollbar(false)
-    }
+    },
+    scrollToTop() {
+      window.scrollTo({
+        top: 750,
+        behavior: 'smooth'
+      })
+    },
   }
 }
 </script>
