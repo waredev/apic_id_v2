@@ -27,4 +27,9 @@
 .custom-drop-blur {
     backdrop-filter: blur(8px);
 }
-  
+
+.text-dsi {
+    text-align: justify;
+    text-justify: distribute;
+    text-align-last: left;
+}
