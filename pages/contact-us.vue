@@ -2,9 +2,9 @@
     <div>
         <div class="xl:px-20 px-8 font-arian-bold xl:pt-60 pt-32">
             <div class="xl:text-4xl text-2xl">{{ $t('contact.contact_label') }}</div>
-            <div class="w-full border my-20 rounded-xl p-10">
+            <div class="w-full border my-10 rounded-xl xl:p-10 p-5">
                 <div class="text-xl">Head Office</div>
-                <div class="mt-5 text-lg text-black font-arian-demi justify-custom">Menara BPJAMSOSTEK (Utara) Lt. 12A <br>Jl. Jend. Gatot Subroto Kav. 38 <br>Jakarta Selatan 12710</div>
+                <div class="mt-5 text-lg text-black font-arian-demi">Menara BPJAMSOSTEK (Utara) Lt. 12A <br>Jl. Jend. Gatot Subroto Kav. 38 <br>Jakarta Selatan 12710</div>
                 <div class="flex mt-5 items-center">
                     <div class="bg-primary rounded-md w-12 h-12 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 text-white h-6">
@@ -12,21 +12,29 @@
                             <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                         </svg>
                     </div>
-                    <div class="ml-5 text-lg text-black font-arian-demi justify-custom">corpsec@apic.co.id</div>
+                    <div class="ml-5 text-lg text-black font-arian-demi">corpsec@apic.co.id</div>
                 </div>
                 <div class="flex mt-5 items-center">
                     <div class="bg-primary rounded-md w-12 h-12 flex items-center justify-center">
                         <img src="~/assets/images/fax.png" class="w-6 h-6">
                     </div>
-                    <div class="ml-5 text-lg text-black font-arian-demi justify-custom">021 - 39502901</div>
+                    <div class="ml-5 text-lg text-black font-arian-demi">021 - 39502901</div>
                 </div>
-                <div class="flex mt-5 items-center">
+                <!-- <div class="flex mt-5 items-center">
                     <div class="bg-primary rounded-md w-12 h-12 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 text-white h-6">
                             <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
                         </svg>
                     </div>
-                    <div class="ml-5 text-lg text-black font-arian-demi justify-custom">021 - 39502900 (hunting)</div>
+                    <div class="ml-5 text-lg text-black font-arian-demi">021 - 39502900 (hunting)</div>
+                </div> -->
+                <div class="flex mt-5 items-center">
+                    <div class="bg-primary rounded-md xl:w-12 w-[3.4rem] h-12 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 text-white h-6">
+                            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-5 text-lg text-black font-arian-demi">021 - 39502900 (hunting)</div>
                 </div>
             </div>
         </div>
