@@ -5,7 +5,7 @@
     <div class="xl:px-20 px-8 font-arian-bold py-32 grid xl:grid-cols-2 grid-cols-none xl:gap-32 gap-0">
       <div class="">
         <div class="text-5xl">{{ $t('home.about_title') }}</div>
-        <div class="mt-7 text-paraph font-arian-demi text-lg justify-custom">{{ $t('home.about_company') }}</div>
+        <p class="mt-7 text-paraph font-arian-demi justify-custom">{{ $t('home.about_company') }}</p>
       </div>
       <div class="flex items-end">
         <img src="~/assets/images/asian-business-man_173387-2213.png" class="xl:flex hidden w-[40rem] ml-auto">

@@ -3,13 +3,13 @@
         <div class="xl:px-20 px-8 font-arian-bold xl:pt-60 pt-32 pb-20">
             <div class="xl:text-4xl text-2xl">{{ data.title }}</div>
             <div class="mt-10 xl:pr-[30rem] pr-0">
-                <div class="text-xl text-slate-700 justify-custom">{{ data.description }}</div>
-                <ol class="ml-10 mt-5 text-lg text-paraph list-decimal">
+                <div class="xl:text-xl text-lg text-slate-700 justify-custom">{{ data.description }}</div>
+                <ol class="ml-10 mt-5 text-paraph list-decimal">
                     <li class="font-arian-demi justify-custom" v-for="(item, index) in data.list_entity" :key="index">{{ item.name }}</li>
                 </ol>
                 <div class="ml-12 mt-5">
-                    <div class="text-xl text-slate-700">{{ data.child_entity_title }}</div>
-                    <ul class="list-disc text-lg text-paraph ml-8 mt-3">
+                    <div class="xl:text-xl text-lg text-slate-700">{{ data.child_entity_title }}</div>
+                    <ul class="list-disc text-paraph ml-8 mt-3">
                         <li class="font-arian-demi justify-custom" v-for="(item, index) in data.child_entity" :key="index">{{ item.name }}</li>
                     </ul>
                 </div>
@@ -18,7 +18,7 @@
                 <div v-for="(item, index) in data.data" :key="index" class="border p-6 w-full rounded-lg mt-6">
                     <div class="text-2xl text-secondary">{{ item.title }}</div>
                     <div class="text-paraph font-arian-demi mt-1 text-lg justify-custom">{{ item.list.title }}</div>
-                    <ul v-if="item.list.data.length > 0" v-for="(list, listIndex) in item.list.data" :key="listIndex" class="list-disc text-lg text-paraph ml-10 mt-3">
+                    <ul v-if="item.list.data.length > 0" v-for="(list, listIndex) in item.list.data" :key="listIndex" class="list-disc text-paraph ml-10 mt-3">
                         <li class="font-arian-demi justify-custom">{{ list.value }}</li>
                     </ul>
                     <div class="xl:text-lg text-md mt-7 text-slate-700">{{ $t('about.management_and_oversight') }}</div>
@@ -42,7 +42,7 @@
                     <div v-if="item.children.length > 0" v-for="(child, chIndex) in item.children" :key="chIndex" class="border xl:p-6 p-3 w-full rounded-lg mt-6">
                         <div class="text-2xl text-secondary">{{ child.title }}</div>
                         <div class="text-paraph font-arian-demi mt-1 text-lg justify-custom">{{ child.list.title }}</div>
-                        <ul v-if="child.list.data.length > 0" v-for="(list, listIndex) in child.list.data" :key="listIndex" class="list-disc text-lg text-paraph ml-10 mt-3">
+                        <ul v-if="child.list.data.length > 0" v-for="(list, listIndex) in child.list.data" :key="listIndex" class="list-disc text-paraph ml-10 mt-3">
                             <li class="font-arian-demi justify-custom">{{ list.value }}</li>
                         </ul>
                         <div class="xl:text-lg text-md mt-7 text-slate-700">{{ $t('about.management_and_oversight') }}</div>

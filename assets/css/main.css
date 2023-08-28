@@ -17,11 +17,11 @@
 }
 
 .justify-custom {
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    word-spacing: -0.05em;
+    /* hyphens: auto;
+    -webkit-hyphens: auto; */
+    /* word-spacing: -0.05em; */
     text-align: justify;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 .custom-drop-blur {

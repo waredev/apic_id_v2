@@ -14,13 +14,13 @@
             <div v-if="activeTab === 0" class="xl:pr-[45rem] mt-10">
               <div class="text-2xl">Agus Herlambang</div>
               <div class="w-32 h-1 mt-1 rounded-full bg-primary"/>
-              <div class="mt-2 text-paraph font-arian-demi justify-custom">{{ $t('about.management.board_commisioner_content1') }}</div>              
+              <div class="mt-5 text-paraph font-arian-demi justify-custom">{{ $t('about.management.board_commisioner_content1') }}</div>              
             </div>
 
             <div v-if="activeTab === 1" class="xl:pr-[45rem] mt-10">
               <div class="text-2xl">Leon Tangi</div>
               <div class="w-32 h-1 mt-1 rounded-full bg-primary"/>
-              <div class="text-paraph font-arian-demi justify-custom mt-5">{{ $t('about.management.board_commisioner_content2') }}</div>              
+              <div class="mt-5 text-paraph font-arian-demi justify-custom">{{ $t('about.management.board_commisioner_content2') }}</div>              
             </div>
 
         </div>
