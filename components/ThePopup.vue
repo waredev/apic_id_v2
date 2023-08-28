@@ -12,7 +12,7 @@
                 </svg>
             </div>
             <div class="text-center text-5xl mt-3 text-primary font-arian-bold">{{ $t('home.warning') }}</div>
-            <div class="font-arian-bold mt-3 px-5 text-slate-700">
+            <div class="font-arian-bold mt-3 xl:px-10 px-5 text-slate-700">
                 <p class="text-justify text-base">{{ $t('home.warning_content') }}</p>
             </div>
             <div class="flex mt-5 items-center justify-center">
