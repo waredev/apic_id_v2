@@ -125,13 +125,13 @@
                     <div v-else>
                         <div v-if="menu.label === 'TENTANG'" class="my-4 cursor-pointer">
                             <div class='group-hover:text-primary flex items-center' @click="showSubMenu1 = !showSubMenu1">
-                                <div>{{ $t(menu.title) }}</div>
+                                <div :class="showSubMenu1 && 'text-primary'">{{ $t(menu.title) }}</div>
                                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" :class="!showSubMenu1 ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' "><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </div>
                             <div v-if="showSubMenu1" v-for="(submenu, subMenuIndex) in menu.sub" :key="subMenuIndex" class="pl-5">
                                 <div v-if="submenu.sub.length > 0" class="bg-white">
                                     <div @click="sub4active = submenu.title" class="flex mt-4 items-center">
-                                        <div :class="sub4active === submenu.title ? 'border-l-4 pl-2 border-primary' : 'border-l-0 border-primary'">{{ $t(submenu.title) }}</div>
+                                        <div :class="sub4active === submenu.title ? 'border-l-4 pl-2 border-primary text-primary' : 'border-l-0 border-primary'">{{ $t(submenu.title) }}</div>
                                         <svg :class="sub4active === submenu.title ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' " viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" ><polyline points="6 9 12 15 18 9"></polyline></svg>
                                     </div>
                                     <div v-if="sub4active === submenu.title" class="pl-4 bg-white group-focus:visible">
@@ -147,13 +147,13 @@
                         </div>
                         <div v-else class="my-4 cursor-pointer">
                             <div class='group-hover:text-primary flex items-center' @click="showSubMenu2 = !showSubMenu2">
-                                <div>{{ $t(menu.title) }}</div>
+                                <div :class="showSubMenu2 && 'text-primary'">{{ $t(menu.title) }}</div>
                                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" :class="!showSubMenu2 ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' "><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </div>
                             <div v-if="showSubMenu2" v-for="(submenu, subMenuIndex) in menu.sub" :key="subMenuIndex" class="pl-5">
                                 <div v-if="submenu.sub.length > 0" class="bg-white">
                                     <div @click="sub4active = submenu.title" class="flex mt-4 items-center">
-                                        <div :class="sub4active === submenu.title ? 'border-l-4 pl-2 border-primary' : 'border-l-0 border-primary'">{{ $t(submenu.title) }}</div>
+                                        <div :class="sub4active === submenu.title ? 'border-l-4 pl-2 border-primary text-primary' : 'border-l-0 border-primary'">{{ $t(submenu.title) }}</div>
                                         <svg :class="sub4active === submenu.title ? 'w-5 h-5 ml-1 transition-all duration-100 rotate-0' : 'w-5 h-5 ml-1 transition-all duration-100 rotate-180' " viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" ><polyline points="6 9 12 15 18 9"></polyline></svg>
                                     </div>
                                     <div v-if="sub4active === submenu.title" class="pl-4 bg-white group-focus:visible">
