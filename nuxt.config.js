@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'apic-site',
+    title: 'Pacific Strategic Financial Tbk',
     htmlAttrs: {
       lang: 'en'
     },

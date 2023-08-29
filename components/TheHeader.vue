@@ -78,20 +78,20 @@
                                             <div class="absolute bg-transparent -mt-10 rounded-lg -left-96 w-96 transition-all hidden group-hover/sub:block scale-0 group-hover/sub:scale-100">
                                                 <!-- <img src="~/assets/images/arrow-right.png" class="absolute right-1.5 w-14 h-12 top-0"> -->
                                                 <div class="bg-white custom-shadow w-[23rem] rounded-md py-3">
-                                                    <nuxt-link v-for="(sub4menu, sub4Index) in submenu.sub" :key="sub4Index" :to="localePath({name: sub4menu.route})">
-                                                        <div class="hover:border-l-8 border-primary hover:bg-slate-100">
+                                                    <a :href="localePath({name: sub4menu.route})" v-for="(sub4menu, sub4Index) in submenu.sub" :key="sub4Index">
+                                                        <div @click="" class="hover:border-l-8 border-primary hover:bg-slate-100">
                                                             <div class="hover:text-primary py-3 px-5">{{ $t(sub4menu.title) }}</div>
                                                         </div>
-                                                    </nuxt-link>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                         
-                                        <nuxt-link v-else :to="localePath({name: submenu.route})">
+                                        <a v-else :href="localePath({name: submenu.route})">
                                             <div class="hover:border-l-8 border-primary hover:bg-slate-100">
                                                 <div class="hover:text-primary py-3 px-5">{{ $t(submenu.title) }}</div>
                                             </div>
-                                        </nuxt-link>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -224,7 +224,6 @@
         name: 'TheHeader',
         data(){
             return{
-                showMenu: false,
                 scrollPostion: 0,
                 showMenu: false,
                 showSubMenu1: false,
@@ -251,6 +250,7 @@
                 this.showSubMenu1 = false;
                 this.showSubMenu2 = false;
                 this.showSubMenu3 = false;
+                this.sub4active = null;
             }
         },
         mounted(){

@@ -1,7 +1,7 @@
 <template>
     <div class="w-full xl:h-[25rem] h-auto bg-primary">
         <div class="xl:px-20 px-8 w-full flex xl:flex-row flex-col font-arian-bold">
-            <div class="xl:w-[35rem] w-auto px-5 bg-white h-24 rounded-b-xl flex items-center justify-center">
+            <div class="xl:w-[35rem] w-auto px-5 bg-white h-24 rounded-b-xl flex items-center justify-center border-t-2 border-t-primary">
                 <img src="~assets/images/logo.png" class="xl:w-14 xl:h-14 w-12 h-12"/>
                 <div class="font-arian-bold xl:text-2xl text-lg xl:ml-5 ml-2">PACIFIC STRATEGIC FINANCIAL</div>
             </div>
