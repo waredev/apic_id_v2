@@ -9,11 +9,12 @@
                     </svg>
                     <div class="ml-2 text-black">Loading. . .</div>
                 </div>
+                
                 <div>
                     <div class="font-arian-bold text-3xl mb-5 border-b border-slate-200 pb-2">Links</div>
                     <div v-if="!loading" v-for="(item, index) in links" :key="index" class="mb-5">
                         <div class="text-xl text-slate-700">{{item.label.substring(0, 50)}}</div>
-                        <a target="_blank" :href="item.link" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
+                        <a target="_blank" :href="item.url" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
                             <img src="~/assets/images/export.png" class="w-6" alt="pdf" />
                             <div class="group-hover:text-white font-arian-demi ml-2">{{item.label.length > 28 ? item.label.substring(0, 27) + '...' : item.label}}</div>
                             <div class="border-l px-4 group-hover:border-white ml-auto">
@@ -24,6 +25,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="mt-10">
                     <div class="font-arian-bold text-3xl mb-5 border-b border-slate-200 pb-2">Downloads</div>
                     <div v-if="!loading" v-for="(item, index) in downloads" :key="index" class="mb-5">
@@ -39,6 +41,7 @@
                         </a>
                     </div>
                 </div>
+                
                 <div class="mt-10">
                     <div class="font-arian-bold text-3xl mb-5 border-b border-slate-200 pb-2">Blanko RUPS</div>
                     <div v-if="!loading" v-for="(item, index) in blanko_rups" :key="index" class="mb-5">
