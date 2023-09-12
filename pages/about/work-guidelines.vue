@@ -11,7 +11,7 @@
                 </div>
                 <div v-if="!loading" v-for="(item, index) in data" :key="index" class="mb-5">
                     <div class="text-xl">{{item.label}}</div>
-                    <a target="_blank" :href="$axios.defaults.baseURL + item.url" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
+                    <a target="_blank" :href="item.url" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
                         <img src="~/assets/images/pdf.png" class="w-8 h-8" alt="pdf" />
                         <div class="group-hover:text-white font-arian-demi ml-2">{{item.label.length > 28 ? item.label.substring(0, 28) + '...' : item.label}}</div>
                         <div class="border-l px-4 group-hover:border-white ml-auto">
@@ -41,10 +41,10 @@
             async fetchData(){
                 const res = await this.$store.dispatch('fetchWorkGuidelines');
                 const result = [];
-                res.data?.data.forEach(item => {
+                res.data.forEach(item => {
                     const val = {
-                        label: this.$i18n.locale === 'id' ? item.attributes.label_id : item.attributes.label_en,
-                        url: item.attributes.file.data.attributes.url
+                        label: this.$i18n.locale === 'id' ? item.label_id : item.label_en,
+                        url: item.file
                     }
                     result.push(val)
                 });

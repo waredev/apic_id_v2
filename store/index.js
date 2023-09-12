@@ -1,41 +1,41 @@
 export const actions = {
     fetchAnnualReport(context){
-        return this.$axios.get('/api/annual-reports?populate=*');
+        return this.$axios.get('/api/annual-reports'); // done
     },
     fetchRups(context){
-        return this.$axios.get('/api/rups?populate[easy_ksei][populate]&populate[rups][populate]=*&&populate[blanko_rups][populate]=*');
+        return this.$axios.get('/api/rups'); // done
     },
     fetchShareholder(context){
-        return this.$axios.get('/api/informasi-pemegang-saham?populate=*');
+        return this.$axios.get('/api/informasi-pemegang-saham'); // done
     },
     fetchFiancialReportYearly(context){
-        return this.$axios.get('/api/laporan-keuangan-tahunans?populate=*');
+        return this.$axios.get('/api/laporan-keuangan-tahunan'); // done
     },
     fetchFiancialReportMiddleYearly(context){
-        return this.$axios.get('/api/laporan-keuangan-tengah-tahunans?populate=*');
+        return this.$axios.get('/api/laporan-keuangan-tengah-tahunan'); // done
     },
     fetchSupportingProfessionalInstitution(context){
-        return this.$axios.get('/api/lembaga-profesi-penunjang?populate=*');
+        return this.$axios.get('/api/lembaga-profesi-penunjang'); // done
     },
     fetchAwards(context){
-        return this.$axios.get('/api/awards?populate=*');
+        return this.$axios.get('/api/penghargaan'); // done
     },
     fetchWorkGuidelines(context){
-        return this.$axios.get('/api/pedoman-kerja-komisaris-dan-direksis?populate=*');
+        return this.$axios.get('/api/pedoman-kerja-komisaris-direksi'); // done
     },
     fetchAuditCommittee(context){
-        return this.$axios.get('/api/piagam-audit?populate=*');
+        return this.$axios.get('/api/piagam-audit'); // done
     },
     fetchCodeOfConduct(context){
-        return this.$axios.get('/api/kode-etik?populate=*');
+        return this.$axios.get('/api/kode-etik'); // done
     },
     fetchRiskManagement(context){
-        return this.$axios.get('/api/manajemen-risiko?populate=*');
+        return this.$axios.get('/api/manajemen-risiko'); // done
     },
     fetchInformationCommitteeAudit(context){
-        return this.$axios.get('/api/informasi-komite-audit?populate=*');
+        return this.$axios.get('/api/informasi-komite-audit'); // done
     },
     fetchCorporateSocialResponsibility(context){
-        return this.$axios.get('/api/informasi-tanggung-jawab-sosial-perusahaan?populate=*');
+        return this.$axios.get('/api/sosial-perusahaan'); // done
     },
 }

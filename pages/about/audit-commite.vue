@@ -8,7 +8,7 @@
             <div class="ml-2 text-black">Loading. . .</div>
         </div>
         <div v-if="!loading && data" class="mb-5 mt-8 flex">
-            <a target="_blank" :href="$axios.defaults.baseURL + data" class="w-auto h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
+            <a target="_blank" :href="data" class="w-auto h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
                 <img src="~/assets/images/pdf.png" class="w-6" alt="pdf" />
                 <div class="group-hover:text-white font-arian-demi ml-2 mx-3">{{ $t('about.audit_commite_label') }}</div>
                 <div class="border-l px-4 group-hover:border-white ml-auto">
@@ -34,13 +34,7 @@
         methods: {
             async fetchData(){
                 const res = await this.$store.dispatch('fetchAuditCommittee');
-                // this.$axios.defaults.baseURL
-                // window.open('https://www.africau.edu/images/default/sample.pdf', '_blank', 'noreferrer');
-                // console.log(res.data.attributes.file.data.attributes.url);
-                // if(res.data.data?.attributes.file.data.attributes.url){
-                //     window.open(this.$axios.defaults.baseURL + res.data.data?.attributes.file.data.attributes.url, '_blank', 'noreferrer');
-                // }
-                this.data = res.data?.data?.attributes?.file?.data?.attributes?.url;
+                this.data = res.data.file;
                 this.loading = false;
             }
         }

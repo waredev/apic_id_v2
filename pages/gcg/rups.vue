@@ -30,7 +30,7 @@
                     <div class="font-arian-bold text-3xl mb-5 border-b border-slate-200 pb-2">Downloads</div>
                     <div v-if="!loading" v-for="(item, index) in downloads" :key="index" class="mb-5">
                         <div class="text-xl text-slate-700">{{item.label}}</div>
-                        <a target="_blank" :href="$axios.defaults.baseURL + item.url" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
+                        <a target="_blank" :href="item.url" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
                             <img src="~/assets/images/pdf.png" class="w-6" alt="pdf" />
                             <div class="group-hover:text-white font-arian-demi ml-2">{{item.label.length > 28 ? item.label.substring(0, 27) + '...' : item.label}}</div>
                             <div class="border-l px-4 group-hover:border-white ml-auto">
@@ -46,7 +46,7 @@
                     <div class="font-arian-bold text-3xl mb-5 border-b border-slate-200 pb-2">Blanko RUPS</div>
                     <div v-if="!loading" v-for="(item, index) in blanko_rups" :key="index" class="mb-5">
                         <div class="text-xl text-slate-700">{{item.label}}</div>
-                        <a target="_blank" :href="$axios.defaults.baseURL + item.url" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
+                        <a target="_blank" :href="item.url" class="xl:w-96 w-full h-12 mt-1 border group hover:bg-primary hover:border-primary cursor-pointer flex items-center px-3 rounded-md">
                             <img src="~/assets/images/pdf.png" class="w-6" alt="pdf" />
                             <div class="group-hover:text-white font-arian-demi ml-2">{{item.label.length > 28 ? item.label.substring(0, 27) + '...' : item.label}}</div>
                             <div class="border-l px-4 group-hover:border-white ml-auto">
@@ -78,15 +78,13 @@
         methods: {
             async fetchData(){
                 const res = await this.$store.dispatch('fetchRups');
-                // this.links = res.data?.data[0]?.attributes.easy_ksei;
-                // this.downloads = res.data?.data[0]?.attributes.rups;
-                // this.blanko_rups = res.data?.data[0]?.attributes.blanko_rups;
+
                 const easy_ksei = [];
                 const rups = [];
                 const blanko_rups = [];
 
                 // links
-                res.data?.data[0]?.attributes.easy_ksei.forEach(item => {
+                res.data.easy_ksei.forEach(item => {
                     const val = {
                         label: this.$i18n.locale === 'id' ? item.label_id : item.label_en,
                         url: item.link
@@ -95,19 +93,19 @@
                 });
 
                 // downloads
-                res.data?.data[0]?.attributes.rups.forEach(item => {
+                res.data.downloads.forEach(item => {
                     const val = {
                         label: this.$i18n.locale === 'id' ? item.label_id : item.label_en,
-                        url: item.file.data.attributes.url
+                        url: item.file
                     }
                     rups.push(val)
                 });
 
                 // blanko rups
-                res.data?.data[0]?.attributes.blanko_rups.forEach(item => {
+                res.data.blanko_rups.forEach(item => {
                     const val = {
                         label: this.$i18n.locale === 'id' ? item.label_id : item.label_en,
-                        url: item.file.data.attributes.url
+                        url: item.file
                     }
                     blanko_rups.push(val)
                 });

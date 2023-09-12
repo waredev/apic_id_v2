@@ -24,7 +24,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/v-particles.js', mode: 'client' },
-    { src: '~/plugins/auth.js' }
+    // { src: '~/plugins/auth.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -147,8 +147,8 @@ export default {
   ],
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://frozen-sierra-62579-15412e533ac0.herokuapp.com',
-    // baseURL: 'http://127.0.0.1:1337'
+    // baseURL: 'https://frozen-sierra-62579-15412e533ac0.herokuapp.com',
+    baseURL: 'https://admin.apic.co.id'
   },
 
   server: {     
