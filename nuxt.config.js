@@ -138,6 +138,10 @@ export default {
           'gcg/finance-report/middle-yearly': {
             id: '/gcg/laporan-keuangan-tengah-tahunan',
             en: '/gcg/semi-annual-financial-reports',
+          },
+          'gcg/public-expose': {
+            id: '/gcg/paparan-publik',
+            en: '/gcg/public-expose',
           }
         }
       }
@@ -151,9 +155,9 @@ export default {
     baseURL: 'https://admin.apic.co.id'
   },
 
-  server: {     
-    port: 3000, // default: 3000     
-    host: '0.0.0.0', // default: localhost   
+  server: {
+    port: 3000, // default: 3000
+    host: '0.0.0.0', // default: localhost
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

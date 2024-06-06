@@ -49,7 +49,8 @@ export default {
             }
         },
         rups: 'GMS',
-        shareholders_information: 'SHAREHOLDER'
+        shareholders_information: 'SHAREHOLDER',
+        public_expose: 'PUBLIC EXPOSE'
     },
     home: {
         read_more: 'Read More',
@@ -101,6 +102,7 @@ export default {
         shareholder: 'Shareholder',
         financial_report_yearly: 'Annual Financial Reports',
         financial_report_middle_yearly: 'Semi-Annual Financial Reports',
+        public_expose_title: 'Public Expose'
     },
     contact: {
         contact_label: 'Contact us for further information.'

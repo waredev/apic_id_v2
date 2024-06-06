@@ -148,6 +148,12 @@
                 "label": "INFORMASI PEMEGANG SAHAM",
                 "sub": [],
                 "route": "gcg-shareholder"
+            },
+            {
+                "title": "submenu.public_expose",
+                "label": "PAPARAN PUBLIK",
+                "sub": [],
+                "route": "gcg-public-expose"
             }
         ],
         "route": "/"

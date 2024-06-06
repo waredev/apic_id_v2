@@ -49,7 +49,8 @@ export default {
             }
         },
         rups: 'RUPS',
-        shareholders_information: 'INFORMASI PEMEGANG SAHAM'
+        shareholders_information: 'INFORMASI PEMEGANG SAHAM',
+        public_expose: 'PAPARAN PUBLIK'
     },
     home: {
         read_more: 'Baca Selengkapnya',
@@ -100,7 +101,8 @@ export default {
         rups: 'RUPS',
         shareholder: 'Informasi Pemegang Saham',
         financial_report_yearly: 'Laporan Keuangan Tahunan',
-        financial_report_middle_yearly: 'Laporan Keuangan Tengah Tahunan'
+        financial_report_middle_yearly: 'Laporan Keuangan Tengah Tahunan',
+        public_expose_title: 'Paparan Publik'
     },
     contact: {
         contact_label: 'Hubungi kami untuk informasi lebih lanjut.'

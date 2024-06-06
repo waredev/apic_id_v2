@@ -38,4 +38,7 @@ export const actions = {
     fetchCorporateSocialResponsibility(context){
         return this.$axios.get('/api/sosial-perusahaan'); // done
     },
+    fetchPublicExpose(context){
+        return this.$axios.get('/api/public-expose'); // done
+    },
 }
